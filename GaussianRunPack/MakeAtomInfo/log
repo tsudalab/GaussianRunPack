@@ -1,0 +1,2450 @@
+work/B3LYP_3-21G_B.com
+work/B3LYP_3-21G_Be.com
+work/B3LYP_3-21G_Br.com
+work/B3LYP_3-21G_C.com
+work/B3LYP_3-21G_Cl.com
+work/B3LYP_3-21G_F.com
+work/B3LYP_3-21G_H.com
+work/B3LYP_3-21G_He.com
+work/B3LYP_3-21G_I.com
+work/B3LYP_3-21G_Li.com
+work/B3LYP_3-21G_Na.com
+work/B3LYP_3-21G_N.com
+work/B3LYP_3-21G_Ne.com
+work/B3LYP_3-21G_O.com
+work/B3LYP_3-21G_P.com
+work/B3LYP_3-21+Gs_B.com
+work/B3LYP_3-21Gs_B.com
+work/B3LYP_3-21+Gs_Be.com
+work/B3LYP_3-21Gs_Be.com
+work/B3LYP_3-21+Gs_Br.com
+work/B3LYP_3-21Gs_Br.com
+work/B3LYP_3-21+Gs_C.com
+work/B3LYP_3-21Gs_C.com
+work/B3LYP_3-21+Gs_Cl.com
+work/B3LYP_3-21Gs_Cl.com
+work/B3LYP_3-21G_S.com
+work/B3LYP_3-21+Gs_F.com
+work/B3LYP_3-21Gs_F.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000072e6, rsp 00007fff0c309238, rbp 00007fff0c3097b0
+   rsi 000000000000000b, rdi 00000000000072e6, r8  0000000000000020
+   r9  00007fff0c308e1f, r10 00007fff0c308fc0, r11 0000000000000202
+   r12 00007fff0c3097f8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b9c240e5370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b9c246294a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b9c24615b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_3-21+Gs_H.com
+work/B3LYP_3-21Gs_H.com
+work/B3LYP_3-21+Gs_He.com
+work/B3LYP_3-21Gs_He.com
+work/B3LYP_3-21+Gs_I.com
+work/B3LYP_3-21Gs_I.com
+work/B3LYP_3-21G_Si.com
+work/B3LYP_3-21+Gs_Li.com
+work/B3LYP_3-21Gs_Li.com
+work/B3LYP_3-21+Gs_Na.com
+work/B3LYP_3-21Gs_Na.com
+work/B3LYP_3-21+Gs_N.com
+work/B3LYP_3-21Gs_N.com
+work/B3LYP_3-21+Gs_Ne.com
+work/B3LYP_3-21Gs_Ne.com
+work/B3LYP_3-21+Gs_O.com
+work/B3LYP_3-21Gs_O.com
+work/B3LYP_3-21+Gs_P.com
+work/B3LYP_3-21Gs_P.com
+work/B3LYP_3-21+Gs_S.com
+work/B3LYP_3-21Gs_S.com
+work/B3LYP_3-21+Gs_Si.com
+work/B3LYP_3-21Gs_Si.com
+work/B3LYP_6-311G_B.com
+work/B3LYP_6-311G_Be.com
+work/B3LYP_6-311G_Br.com
+work/B3LYP_6-311G_C.com
+work/B3LYP_6-311G_Cl.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007349, rsp 00007ffc256505e8, rbp 00007ffc25650b60
+   rsi 000000000000000b, rdi 0000000000007349, r8  0000000000000020
+   r9  00007ffc256501cf, r10 00007ffc25650370, r11 0000000000000206
+   r12 00007ffc25650ba8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2af9cf18a370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2af9cf6ce4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2af9cf6bab35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-311G_F.com
+work/B3LYP_6-311G_H.com
+work/B3LYP_6-311G_He.com
+work/B3LYP_6-311G_I.com
+work/B3LYP_6-311G_Li.com
+work/B3LYP_6-311G_Na.com
+work/B3LYP_6-311G_N.com
+work/B3LYP_6-311G_Ne.com
+work/B3LYP_6-311G_O.com
+work/B3LYP_6-311G_P.com
+work/B3LYP_6-311+Gs_B.com
+work/B3LYP_6-311+Gs_Be.com
+work/B3LYP_6-311+Gs_Br.com
+work/B3LYP_6-311+Gs_C.com
+work/B3LYP_6-311+Gs_Cl.com
+work/B3LYP_6-311G_S.com
+work/B3LYP_6-311+Gs_F.com
+work/B3LYP_6-311+Gs_H.com
+work/B3LYP_6-311+Gs_He.com
+work/B3LYP_6-311+Gs_I.com
+work/B3LYP_6-311G_Si.com
+work/B3LYP_6-311+Gs_Li.com
+work/B3LYP_6-311+Gs_Na.com
+work/B3LYP_6-311+Gs_N.com
+work/B3LYP_6-311+Gs_Ne.com
+work/B3LYP_6-311+Gs_O.com
+work/B3LYP_6-311+Gs_P.com
+work/B3LYP_6-311+Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000739c, rsp 00007ffc60e9af78, rbp 00007ffc60e9b4f0
+   rsi 000000000000000b, rdi 000000000000739c, r8  0000000000000020
+   r9  00007ffc60e9ab5f, r10 00007ffc60e9ad00, r11 0000000000000206
+   r12 00007ffc60e9b538, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b470f937370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b470fe7b4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b470fe67b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007394, rsp 00007ffce7eb9da8, rbp 00007ffce7eba320
+   rsi 000000000000000b, rdi 0000000000007394, r8  0000000000000020
+   r9  00007ffce7eb998f, r10 00007ffce7eb9b30, r11 0000000000000202
+   r12 00007ffce7eba368, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2acc7590f370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2acc75e534a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2acc75e3fb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-311Gss_B.com
+work/B3LYP_6-311+Gss_Be.com
+work/B3LYP_6-311Gss_Be.com
+work/B3LYP_6-311+Gss_Br.com
+work/B3LYP_6-311Gss_Br.com
+work/B3LYP_6-311+Gss_C.com
+work/B3LYP_6-311Gss_C.com
+work/B3LYP_6-311+Gss_Cl.com
+work/B3LYP_6-311Gss_Cl.com
+work/B3LYP_6-311+Gs_S.com
+work/B3LYP_6-311+Gss_F.com
+work/B3LYP_6-311Gss_F.com
+work/B3LYP_6-311+Gss_H.com
+work/B3LYP_6-311Gss_H.com
+work/B3LYP_6-311+Gss_He.com
+work/B3LYP_6-311Gss_He.com
+work/B3LYP_6-311+Gss_I.com
+work/B3LYP_6-311Gss_I.com
+work/B3LYP_6-311+Gs_Si.com
+work/B3LYP_6-311+Gss_Li.com
+work/B3LYP_6-311Gss_Li.com
+work/B3LYP_6-311+Gss_Na.com
+work/B3LYP_6-311Gss_Na.com
+work/B3LYP_6-311+Gss_N.com
+work/B3LYP_6-311Gss_N.com
+work/B3LYP_6-311+Gss_Ne.com
+work/B3LYP_6-311Gss_Ne.com
+work/B3LYP_6-311+Gss_O.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000740f, rsp 00007fff58ecd808, rbp 00007fff58ecdd80
+   rsi 000000000000000b, rdi 000000000000740f, r8  0000000000000020
+   r9  00007fff58ecd3ef, r10 00007fff58ecd590, r11 0000000000000202
+   r12 00007fff58ecddc8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b7bbee24370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b7bbf3684a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b7bbf354b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000740e, rsp 00007ffe33740b18, rbp 00007ffe33741090
+   rsi 000000000000000b, rdi 000000000000740e, r8  0000000000000020
+   r9  00007ffe337406ff, r10 00007ffe337408a0, r11 0000000000000206
+   r12 00007ffe337410d8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b79b630d370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b79b68514a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b79b683db35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-311Gss_O.com
+work/B3LYP_6-311+Gss_P.com
+work/B3LYP_6-311Gss_P.com
+work/B3LYP_6-311+Gss_S.com
+work/B3LYP_6-311Gss_S.com
+work/B3LYP_6-311+Gss_Si.com
+work/B3LYP_6-311Gss_Si.com
+work/B3LYP_6-31G_B.com
+work/B3LYP_6-31G_Be.com
+work/B3LYP_6-31G_Br.com
+work/B3LYP_6-31G_C.com
+work/B3LYP_6-31G_Cl.com
+work/B3LYP_6-31G_F.com
+work/B3LYP_6-31G_H.com
+work/B3LYP_6-31G_He.com
+work/B3LYP_6-31G_I.com
+work/B3LYP_6-31G_Li.com
+work/B3LYP_6-31G_Na.com
+work/B3LYP_6-31G_N.com
+work/B3LYP_6-31G_Ne.com
+work/B3LYP_6-31G_O.com
+work/B3LYP_6-31G_P.com
+work/B3LYP_6-31+Gs_B.com
+work/B3LYP_6-31Gs_B.com
+work/B3LYP_6-31+Gs_Be.com
+work/B3LYP_6-31Gs_Be.com
+work/B3LYP_6-31+Gs_Br.com
+work/B3LYP_6-31Gs_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007470, rsp 00007ffd31b13e08, rbp 00007ffd31b14380
+   rsi 000000000000000b, rdi 0000000000007470, r8  0000000000000020
+   r9  00007ffd31b139ef, r10 00007ffd31b13b90, r11 0000000000000202
+   r12 00007ffd31b143c8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b44bde99370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b44be3dd4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b44be3c9b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-31+Gs_C.com
+work/B3LYP_6-31Gs_C.com
+work/B3LYP_6-31+Gs_Cl.com
+work/B3LYP_6-31Gs_Cl.com
+work/B3LYP_6-31G_S.com
+work/B3LYP_6-31+Gs_F.com
+work/B3LYP_6-31Gs_F.com
+work/B3LYP_6-31+Gs_H.com
+work/B3LYP_6-31Gs_H.com
+work/B3LYP_6-31+Gs_He.com
+work/B3LYP_6-31Gs_He.com
+work/B3LYP_6-31+Gs_I.com
+work/B3LYP_6-31Gs_I.com
+work/B3LYP_6-31G_Si.com
+work/B3LYP_6-31+Gs_Li.com
+work/B3LYP_6-31Gs_Li.com
+work/B3LYP_6-31+Gs_Na.com
+work/B3LYP_6-31Gs_Na.com
+work/B3LYP_6-31+Gs_N.com
+work/B3LYP_6-31Gs_N.com
+work/B3LYP_6-31+Gs_Ne.com
+work/B3LYP_6-31Gs_Ne.com
+work/B3LYP_6-31+Gs_O.com
+work/B3LYP_6-31Gs_O.com
+work/B3LYP_6-31+Gs_P.com
+work/B3LYP_6-31Gs_P.com
+work/B3LYP_6-31+Gss_B.com
+work/B3LYP_6-31Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000074ae, rsp 00007fff29afab38, rbp 00007fff29afb0b0
+   rsi 000000000000000b, rdi 00000000000074ae, r8  0000000000000020
+   r9  00007fff29afa71f, r10 00007fff29afa8c0, r11 0000000000000202
+   r12 00007fff29afb0f8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2af19fca9370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2af1a01ed4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2af1a01d9b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000074b2, rsp 00007ffd7c3a1948, rbp 00007ffd7c3a1ec0
+   rsi 000000000000000b, rdi 00000000000074b2, r8  0000000000000020
+   r9  00007ffd7c3a152f, r10 00007ffd7c3a16d0, r11 0000000000000206
+   r12 00007ffd7c3a1f08, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b286047a370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b28609be4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b28609aab35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-31+Gss_Be.com
+work/B3LYP_6-31Gss_Be.com
+work/B3LYP_6-31+Gss_Br.com
+work/B3LYP_6-31Gss_Br.com
+work/B3LYP_6-31+Gss_C.com
+work/B3LYP_6-31Gss_C.com
+work/B3LYP_6-31+Gss_Cl.com
+work/B3LYP_6-31Gss_Cl.com
+work/B3LYP_6-31+Gs_S.com
+work/B3LYP_6-31Gs_S.com
+work/B3LYP_6-31+Gss_F.com
+work/B3LYP_6-31Gss_F.com
+work/B3LYP_6-31+Gss_H.com
+work/B3LYP_6-31Gss_H.com
+work/B3LYP_6-31+Gss_He.com
+work/B3LYP_6-31Gss_He.com
+work/B3LYP_6-31+Gss_I.com
+work/B3LYP_6-31Gss_I.com
+work/B3LYP_6-31+Gs_Si.com
+work/B3LYP_6-31Gs_Si.com
+work/B3LYP_6-31+Gss_Li.com
+work/B3LYP_6-31Gss_Li.com
+work/B3LYP_6-31+Gss_Na.com
+work/B3LYP_6-31Gss_Na.com
+work/B3LYP_6-31+Gss_N.com
+work/B3LYP_6-31Gss_N.com
+work/B3LYP_6-31+Gss_Ne.com
+work/B3LYP_6-31Gss_Ne.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000752e, rsp 00007ffdc7fd5a58, rbp 00007ffdc7fd5fd0
+   rsi 000000000000000b, rdi 000000000000752e, r8  0000000000000020
+   r9  00007ffdc7fd563f, r10 00007ffdc7fd57e0, r11 0000000000000202
+   r12 00007ffdc7fd6018, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ac8ada75370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ac8adfb94a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ac8adfa5b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007523, rsp 00007ffd40d6b988, rbp 00007ffd40d6bf00
+   rsi 000000000000000b, rdi 0000000000007523, r8  0000000000000020
+   r9  00007ffd40d6b56f, r10 00007ffd40d6b710, r11 0000000000000206
+   r12 00007ffd40d6bf48, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b8d514be370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b8d51a024a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b8d519eeb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_6-31+Gss_O.com
+work/B3LYP_6-31Gss_O.com
+work/B3LYP_6-31+Gss_P.com
+work/B3LYP_6-31Gss_P.com
+work/B3LYP_6-31+Gss_S.com
+work/B3LYP_6-31Gss_S.com
+work/B3LYP_6-31+Gss_Si.com
+work/B3LYP_6-31Gss_Si.com
+work/B3LYP_LanL2DZ_B.com
+work/B3LYP_LanL2DZ_Be.com
+work/B3LYP_LanL2DZ_Br.com
+work/B3LYP_LanL2DZ_C.com
+work/B3LYP_LanL2DZ_Cl.com
+work/B3LYP_LanL2DZ_F.com
+work/B3LYP_LanL2DZ_H.com
+work/B3LYP_LanL2DZ_He.com
+work/B3LYP_LanL2DZ_I.com
+work/B3LYP_LanL2DZ_Li.com
+work/B3LYP_LanL2DZ_Na.com
+work/B3LYP_LanL2DZ_N.com
+work/B3LYP_LanL2DZ_Ne.com
+work/B3LYP_LanL2DZ_O.com
+work/B3LYP_LanL2DZ_P.com
+work/B3LYP_LanL2DZ_S.com
+work/B3LYP_LanL2DZ_Si.com
+work/B3LYP_STO-3G_B.com
+work/B3LYP_STO-3G_Be.com
+work/B3LYP_STO-3G_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000001435fb0, rcx ffffffffffffffff
+   rdx 00000000000075e6, rsp 00007fffbd38ee98, rbp 00007fffbd38eec0
+   rsi 000000000000000b, rdi 00000000000075e6, r8  0000000000000020
+   r9  00007fffbd38ea7f, r10 00007fffbd38ec20, r11 0000000000000202
+   r12 00000000013fa978, r13 00007fffbd38f118, r14 00002abe658810c0
+   r15 00000000013fa980
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2abe64b93370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2abe650d74a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6da751]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x657097]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x417868]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x41368b]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x408804]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2abe650c3b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/B3LYP_STO-3G_C.com
+work/B3LYP_STO-3G_Cl.com
+work/B3LYP_STO-3G_F.com
+work/B3LYP_STO-3G_H.com
+work/B3LYP_STO-3G_He.com
+work/B3LYP_STO-3G_I.com
+work/B3LYP_STO-3G_Li.com
+work/B3LYP_STO-3G_Na.com
+work/B3LYP_STO-3G_N.com
+work/B3LYP_STO-3G_Ne.com
+work/B3LYP_STO-3G_O.com
+work/B3LYP_STO-3G_P.com
+work/B3LYP_STO-3G_S.com
+work/B3LYP_STO-3G_Si.com
+work/BLYP_3-21G_B.com
+work/BLYP_3-21G_Be.com
+work/BLYP_3-21G_Br.com
+work/BLYP_3-21G_C.com
+work/BLYP_3-21G_Cl.com
+work/BLYP_3-21G_F.com
+work/BLYP_3-21G_H.com
+work/BLYP_3-21G_He.com
+work/BLYP_3-21G_I.com
+work/BLYP_3-21G_Li.com
+work/BLYP_3-21G_Na.com
+work/BLYP_3-21G_N.com
+work/BLYP_3-21G_Ne.com
+work/BLYP_3-21G_O.com
+work/BLYP_3-21G_P.com
+work/BLYP_3-21+Gs_B.com
+work/BLYP_3-21Gs_B.com
+work/BLYP_3-21+Gs_Be.com
+work/BLYP_3-21Gs_Be.com
+work/BLYP_3-21+Gs_Br.com
+work/BLYP_3-21Gs_Br.com
+work/BLYP_3-21+Gs_C.com
+work/BLYP_3-21Gs_C.com
+work/BLYP_3-21+Gs_Cl.com
+work/BLYP_3-21Gs_Cl.com
+work/BLYP_3-21G_S.com
+work/BLYP_3-21+Gs_F.com
+work/BLYP_3-21Gs_F.com
+work/BLYP_3-21+Gs_H.com
+work/BLYP_3-21Gs_H.com
+work/BLYP_3-21+Gs_He.com
+work/BLYP_3-21Gs_He.com
+work/BLYP_3-21+Gs_I.com
+work/BLYP_3-21Gs_I.com
+work/BLYP_3-21G_Si.com
+work/BLYP_3-21+Gs_Li.com
+work/BLYP_3-21Gs_Li.com
+work/BLYP_3-21+Gs_Na.com
+work/BLYP_3-21Gs_Na.com
+work/BLYP_3-21+Gs_N.com
+work/BLYP_3-21Gs_N.com
+work/BLYP_3-21+Gs_Ne.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000000d87, rsp 00007ffd83c00048, rbp 00007ffd83c005c0
+   rsi 000000000000000b, rdi 0000000000000d87, r8  0000000000000020
+   r9  00007ffd83bffc2f, r10 00007ffd83bffdd0, r11 0000000000000206
+   r12 00007ffd83c00608, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2aed41308370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2aed4184c4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2aed41838b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000000d9b, rsp 00007ffe6423b4d8, rbp 00007ffe6423ba50
+   rsi 000000000000000b, rdi 0000000000000d9b, r8  0000000000000020
+   r9  00007ffe6423b0bf, r10 00007ffe6423b260, r11 0000000000000206
+   r12 00007ffe6423ba98, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b0fe2407370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b0fe294b4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b0fe2937b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_3-21Gs_Ne.com
+work/BLYP_3-21+Gs_O.com
+work/BLYP_3-21Gs_O.com
+work/BLYP_3-21+Gs_P.com
+work/BLYP_3-21Gs_P.com
+work/BLYP_3-21+Gs_S.com
+work/BLYP_3-21Gs_S.com
+work/BLYP_3-21+Gs_Si.com
+work/BLYP_3-21Gs_Si.com
+work/BLYP_6-311G_B.com
+work/BLYP_6-311G_Be.com
+work/BLYP_6-311G_Br.com
+work/BLYP_6-311G_C.com
+work/BLYP_6-311G_Cl.com
+work/BLYP_6-311G_F.com
+work/BLYP_6-311G_H.com
+work/BLYP_6-311G_He.com
+work/BLYP_6-311G_I.com
+work/BLYP_6-311G_Li.com
+work/BLYP_6-311G_Na.com
+work/BLYP_6-311G_N.com
+work/BLYP_6-311G_Ne.com
+work/BLYP_6-311G_O.com
+work/BLYP_6-311G_P.com
+work/BLYP_6-311+Gs_B.com
+work/BLYP_6-311+Gs_Be.com
+work/BLYP_6-311+Gs_Br.com
+work/BLYP_6-311+Gs_C.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000265b, rsp 00007fff92dd8238, rbp 00007fff92dd87b0
+   rsi 000000000000000b, rdi 000000000000265b, r8  0000000000000020
+   r9  00007fff92dd7e1f, r10 00007fff92dd7fc0, r11 0000000000000202
+   r12 00007fff92dd87f8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b02b9dff370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b02ba3434a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b02ba32fb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_6-311+Gs_Cl.com
+work/BLYP_6-311G_S.com
+work/BLYP_6-311+Gs_F.com
+work/BLYP_6-311+Gs_H.com
+work/BLYP_6-311+Gs_He.com
+work/BLYP_6-311+Gs_I.com
+work/BLYP_6-311G_Si.com
+work/BLYP_6-311+Gs_Li.com
+work/BLYP_6-311+Gs_Na.com
+work/BLYP_6-311+Gs_N.com
+work/BLYP_6-311+Gs_Ne.com
+work/BLYP_6-311+Gs_O.com
+work/BLYP_6-311+Gs_P.com
+work/BLYP_6-311+Gss_B.com
+work/BLYP_6-311Gss_B.com
+work/BLYP_6-311+Gss_Be.com
+work/BLYP_6-311Gss_Be.com
+work/BLYP_6-311+Gss_Br.com
+work/BLYP_6-311Gss_Br.com
+work/BLYP_6-311+Gss_C.com
+work/BLYP_6-311Gss_C.com
+work/BLYP_6-311+Gss_Cl.com
+work/BLYP_6-311Gss_Cl.com
+work/BLYP_6-311+Gs_S.com
+work/BLYP_6-311+Gss_F.com
+work/BLYP_6-311Gss_F.com
+work/BLYP_6-311+Gss_H.com
+work/BLYP_6-311Gss_H.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000003c88, rsp 00007fff21c07458, rbp 00007fff21c079d0
+   rsi 000000000000000b, rdi 0000000000003c88, r8  0000000000000020
+   r9  00007fff21c0703f, r10 00007fff21c071e0, r11 0000000000000202
+   r12 00007fff21c07a18, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b6c29f0e370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b6c2a4524a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b6c2a43eb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_6-311+Gss_He.com
+work/BLYP_6-311Gss_He.com
+work/BLYP_6-311+Gss_I.com
+work/BLYP_6-311Gss_I.com
+work/BLYP_6-311+Gs_Si.com
+work/BLYP_6-311+Gss_Li.com
+work/BLYP_6-311Gss_Li.com
+work/BLYP_6-311+Gss_Na.com
+work/BLYP_6-311Gss_Na.com
+work/BLYP_6-311+Gss_N.com
+work/BLYP_6-311Gss_N.com
+work/BLYP_6-311+Gss_Ne.com
+work/BLYP_6-311Gss_Ne.com
+work/BLYP_6-311+Gss_O.com
+work/BLYP_6-311Gss_O.com
+work/BLYP_6-311+Gss_P.com
+work/BLYP_6-311Gss_P.com
+work/BLYP_6-311+Gss_S.com
+work/BLYP_6-311Gss_S.com
+work/BLYP_6-311+Gss_Si.com
+work/BLYP_6-311Gss_Si.com
+work/BLYP_6-31G_B.com
+work/BLYP_6-31G_Be.com
+work/BLYP_6-31G_Br.com
+work/BLYP_6-31G_C.com
+work/BLYP_6-31G_Cl.com
+work/BLYP_6-31G_F.com
+work/BLYP_6-31G_H.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000005601, rsp 00007ffd2b90b138, rbp 00007ffd2b90b6b0
+   rsi 000000000000000b, rdi 0000000000005601, r8  0000000000000020
+   r9  00007ffd2b90ad1f, r10 00007ffd2b90aec0, r11 0000000000000202
+   r12 00007ffd2b90b6f8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ad9b48fe370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ad9b4e424a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ad9b4e2eb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000560c, rsp 00007ffc3e5fa088, rbp 00007ffc3e5fa600
+   rsi 000000000000000b, rdi 000000000000560c, r8  0000000000000020
+   r9  00007ffc3e5f9c6f, r10 00007ffc3e5f9e10, r11 0000000000000206
+   r12 00007ffc3e5fa648, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b4e3d215370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b4e3d7594a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b4e3d745b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_6-31G_He.com
+work/BLYP_6-31G_I.com
+work/BLYP_6-31G_Li.com
+work/BLYP_6-31G_Na.com
+work/BLYP_6-31G_N.com
+work/BLYP_6-31G_Ne.com
+work/BLYP_6-31G_O.com
+work/BLYP_6-31G_P.com
+work/BLYP_6-31+Gs_B.com
+work/BLYP_6-31Gs_B.com
+work/BLYP_6-31+Gs_Be.com
+work/BLYP_6-31Gs_Be.com
+work/BLYP_6-31+Gs_Br.com
+work/BLYP_6-31Gs_Br.com
+work/BLYP_6-31+Gs_C.com
+work/BLYP_6-31Gs_C.com
+work/BLYP_6-31+Gs_Cl.com
+work/BLYP_6-31Gs_Cl.com
+work/BLYP_6-31G_S.com
+work/BLYP_6-31+Gs_F.com
+work/BLYP_6-31Gs_F.com
+work/BLYP_6-31+Gs_H.com
+work/BLYP_6-31Gs_H.com
+work/BLYP_6-31+Gs_He.com
+work/BLYP_6-31Gs_He.com
+work/BLYP_6-31+Gs_I.com
+work/BLYP_6-31Gs_I.com
+work/BLYP_6-31G_Si.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000005bc6, rsp 00007ffdf35aa5e8, rbp 00007ffdf35aab60
+   rsi 000000000000000b, rdi 0000000000005bc6, r8  0000000000000020
+   r9  00007ffdf35aa1cf, r10 00007ffdf35aa370, r11 0000000000000206
+   r12 00007ffdf35aaba8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ad95aabb370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ad95afff4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ad95afebb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000005bc0, rsp 00007ffe1a49fe68, rbp 00007ffe1a4a03e0
+   rsi 000000000000000b, rdi 0000000000005bc0, r8  0000000000000020
+   r9  00007ffe1a49fa4f, r10 00007ffe1a49fbf0, r11 0000000000000202
+   r12 00007ffe1a4a0428, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ae13c8a5370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ae13cde94a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ae13cdd5b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000005bd1, rsp 00007fff81110ea8, rbp 00007fff81111420
+   rsi 000000000000000b, rdi 0000000000005bd1, r8  0000000000000020
+   r9  00007fff81110a8f, r10 00007fff81110c30, r11 0000000000000202
+   r12 00007fff81111468, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b552fac9370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b553000d4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b552fff9b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_6-31+Gs_Li.com
+work/BLYP_6-31Gs_Li.com
+work/BLYP_6-31+Gs_Na.com
+work/BLYP_6-31Gs_Na.com
+work/BLYP_6-31+Gs_N.com
+work/BLYP_6-31Gs_N.com
+work/BLYP_6-31+Gs_Ne.com
+work/BLYP_6-31Gs_Ne.com
+work/BLYP_6-31+Gs_O.com
+work/BLYP_6-31Gs_O.com
+work/BLYP_6-31+Gs_P.com
+work/BLYP_6-31Gs_P.com
+work/BLYP_6-31+Gss_B.com
+work/BLYP_6-31Gss_B.com
+work/BLYP_6-31+Gss_Be.com
+work/BLYP_6-31Gss_Be.com
+work/BLYP_6-31+Gss_Br.com
+work/BLYP_6-31Gss_Br.com
+work/BLYP_6-31+Gss_C.com
+work/BLYP_6-31Gss_C.com
+work/BLYP_6-31+Gss_Cl.com
+work/BLYP_6-31Gss_Cl.com
+work/BLYP_6-31+Gs_S.com
+work/BLYP_6-31Gs_S.com
+work/BLYP_6-31+Gss_F.com
+work/BLYP_6-31Gss_F.com
+work/BLYP_6-31+Gss_H.com
+work/BLYP_6-31Gss_H.com
+work/BLYP_6-31+Gss_He.com
+work/BLYP_6-31Gss_He.com
+work/BLYP_6-31+Gss_I.com
+work/BLYP_6-31Gss_I.com
+work/BLYP_6-31+Gs_Si.com
+work/BLYP_6-31Gs_Si.com
+work/BLYP_6-31+Gss_Li.com
+work/BLYP_6-31Gss_Li.com
+work/BLYP_6-31+Gss_Na.com
+work/BLYP_6-31Gss_Na.com
+work/BLYP_6-31+Gss_N.com
+work/BLYP_6-31Gss_N.com
+work/BLYP_6-31+Gss_Ne.com
+work/BLYP_6-31Gss_Ne.com
+work/BLYP_6-31+Gss_O.com
+work/BLYP_6-31Gss_O.com
+work/BLYP_6-31+Gss_P.com
+work/BLYP_6-31Gss_P.com
+work/BLYP_6-31+Gss_S.com
+work/BLYP_6-31Gss_S.com
+work/BLYP_6-31+Gss_Si.com
+work/BLYP_6-31Gss_Si.com
+work/BLYP_LanL2DZ_B.com
+work/BLYP_LanL2DZ_Be.com
+work/BLYP_LanL2DZ_Br.com
+work/BLYP_LanL2DZ_C.com
+work/BLYP_LanL2DZ_Cl.com
+work/BLYP_LanL2DZ_F.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007ef4, rsp 00007ffc90e449c8, rbp 00007ffc90e44f40
+   rsi 000000000000000b, rdi 0000000000007ef4, r8  0000000000000020
+   r9  00007ffc90e445af, r10 00007ffc90e44750, r11 0000000000000202
+   r12 00007ffc90e44f88, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ad2f2012370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ad2f25564a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ad2f2542b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000007efa, rsp 00007ffe8d513518, rbp 00007ffe8d513a90
+   rsi 000000000000000b, rdi 0000000000007efa, r8  0000000000000020
+   r9  00007ffe8d5130ff, r10 00007ffe8d5132a0, r11 0000000000000206
+   r12 00007ffe8d513ad8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b1b42dfa370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b1b4333e4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b1b4332ab35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/BLYP_LanL2DZ_H.com
+work/BLYP_LanL2DZ_He.com
+work/BLYP_LanL2DZ_I.com
+work/BLYP_LanL2DZ_Li.com
+work/BLYP_LanL2DZ_Na.com
+work/BLYP_LanL2DZ_N.com
+work/BLYP_LanL2DZ_Ne.com
+work/BLYP_LanL2DZ_O.com
+work/BLYP_LanL2DZ_P.com
+work/BLYP_LanL2DZ_S.com
+work/BLYP_LanL2DZ_Si.com
+work/BLYP_STO-3G_B.com
+work/BLYP_STO-3G_Be.com
+work/BLYP_STO-3G_Br.com
+work/BLYP_STO-3G_C.com
+work/BLYP_STO-3G_Cl.com
+work/BLYP_STO-3G_F.com
+work/BLYP_STO-3G_H.com
+work/BLYP_STO-3G_He.com
+work/BLYP_STO-3G_I.com
+work/BLYP_STO-3G_Li.com
+work/BLYP_STO-3G_Na.com
+work/BLYP_STO-3G_N.com
+work/BLYP_STO-3G_Ne.com
+work/BLYP_STO-3G_O.com
+work/BLYP_STO-3G_P.com
+work/BLYP_STO-3G_S.com
+work/BLYP_STO-3G_Si.com
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000001435fb0, rcx ffffffffffffffff
+   rdx 0000000000007fc3, rsp 00007fff6f54afc8, rbp 00007fff6f54aff0
+   rsi 000000000000000b, rdi 0000000000007fc3, r8  0000000000000020
+   r9  00007fff6f54abaf, r10 00007fff6f54ad50, r11 0000000000000202
+   r12 00000000013fa978, r13 00007fff6f54b248, r14 00002ba4dc8210c0
+   r15 00000000013fa980
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ba4dbb33370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ba4dc0774a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6da751]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x657097]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x417868]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x41368b]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x408804]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ba4dc063b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_3-21G_B.com
+work/CAM-B3LYP_3-21G_Be.com
+work/CAM-B3LYP_3-21G_Br.com
+work/CAM-B3LYP_3-21G_C.com
+work/CAM-B3LYP_3-21G_Cl.com
+work/CAM-B3LYP_3-21G_F.com
+work/CAM-B3LYP_3-21G_H.com
+work/CAM-B3LYP_3-21G_He.com
+work/CAM-B3LYP_3-21G_I.com
+work/CAM-B3LYP_3-21G_Li.com
+work/CAM-B3LYP_3-21G_Na.com
+work/CAM-B3LYP_3-21G_N.com
+work/CAM-B3LYP_3-21G_Ne.com
+work/CAM-B3LYP_3-21G_O.com
+work/CAM-B3LYP_3-21G_P.com
+work/CAM-B3LYP_3-21+Gs_B.com
+work/CAM-B3LYP_3-21Gs_B.com
+work/CAM-B3LYP_3-21+Gs_Be.com
+work/CAM-B3LYP_3-21Gs_Be.com
+work/CAM-B3LYP_3-21+Gs_Br.com
+work/CAM-B3LYP_3-21Gs_Br.com
+work/CAM-B3LYP_3-21+Gs_C.com
+work/CAM-B3LYP_3-21Gs_C.com
+work/CAM-B3LYP_3-21+Gs_Cl.com
+work/CAM-B3LYP_3-21Gs_Cl.com
+work/CAM-B3LYP_3-21G_S.com
+work/CAM-B3LYP_3-21+Gs_F.com
+work/CAM-B3LYP_3-21Gs_F.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000000f4e, rsp 00007ffdec61ff88, rbp 00007ffdec620500
+   rsi 000000000000000b, rdi 0000000000000f4e, r8  0000000000000020
+   r9  00007ffdec61fb6f, r10 00007ffdec61fd10, r11 0000000000000206
+   r12 00007ffdec620548, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2abf1e60f370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2abf1eb534a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2abf1eb3fb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_3-21+Gs_H.com
+work/CAM-B3LYP_3-21Gs_H.com
+work/CAM-B3LYP_3-21+Gs_He.com
+work/CAM-B3LYP_3-21Gs_He.com
+work/CAM-B3LYP_3-21+Gs_I.com
+work/CAM-B3LYP_3-21Gs_I.com
+work/CAM-B3LYP_3-21G_Si.com
+work/CAM-B3LYP_3-21+Gs_Li.com
+work/CAM-B3LYP_3-21Gs_Li.com
+work/CAM-B3LYP_3-21+Gs_Na.com
+work/CAM-B3LYP_3-21Gs_Na.com
+work/CAM-B3LYP_3-21+Gs_N.com
+work/CAM-B3LYP_3-21Gs_N.com
+work/CAM-B3LYP_3-21+Gs_Ne.com
+work/CAM-B3LYP_3-21Gs_Ne.com
+work/CAM-B3LYP_3-21+Gs_O.com
+work/CAM-B3LYP_3-21Gs_O.com
+work/CAM-B3LYP_3-21+Gs_P.com
+work/CAM-B3LYP_3-21Gs_P.com
+work/CAM-B3LYP_3-21+Gs_S.com
+work/CAM-B3LYP_3-21Gs_S.com
+work/CAM-B3LYP_3-21+Gs_Si.com
+work/CAM-B3LYP_3-21Gs_Si.com
+work/CAM-B3LYP_6-311G_B.com
+work/CAM-B3LYP_6-311G_Be.com
+work/CAM-B3LYP_6-311G_Br.com
+work/CAM-B3LYP_6-311G_C.com
+work/CAM-B3LYP_6-311G_Cl.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000000fa1, rsp 00007fff733cf078, rbp 00007fff733cf5f0
+   rsi 000000000000000b, rdi 0000000000000fa1, r8  0000000000000020
+   r9  00007fff733cec5f, r10 00007fff733cee00, r11 0000000000000206
+   r12 00007fff733cf638, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b6780f96370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b67814da4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b67814c6b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-311G_F.com
+work/CAM-B3LYP_6-311G_H.com
+work/CAM-B3LYP_6-311G_He.com
+work/CAM-B3LYP_6-311G_I.com
+work/CAM-B3LYP_6-311G_Li.com
+work/CAM-B3LYP_6-311G_Na.com
+work/CAM-B3LYP_6-311G_N.com
+work/CAM-B3LYP_6-311G_Ne.com
+work/CAM-B3LYP_6-311G_O.com
+work/CAM-B3LYP_6-311G_P.com
+work/CAM-B3LYP_6-311+Gs_B.com
+work/CAM-B3LYP_6-311+Gs_Be.com
+work/CAM-B3LYP_6-311+Gs_Br.com
+work/CAM-B3LYP_6-311+Gs_C.com
+work/CAM-B3LYP_6-311+Gs_Cl.com
+work/CAM-B3LYP_6-311G_S.com
+work/CAM-B3LYP_6-311+Gs_F.com
+work/CAM-B3LYP_6-311+Gs_H.com
+work/CAM-B3LYP_6-311+Gs_He.com
+work/CAM-B3LYP_6-311+Gs_I.com
+work/CAM-B3LYP_6-311G_Si.com
+work/CAM-B3LYP_6-311+Gs_Li.com
+work/CAM-B3LYP_6-311+Gs_Na.com
+work/CAM-B3LYP_6-311+Gs_N.com
+work/CAM-B3LYP_6-311+Gs_Ne.com
+work/CAM-B3LYP_6-311+Gs_O.com
+work/CAM-B3LYP_6-311+Gs_P.com
+work/CAM-B3LYP_6-311+Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000101b, rsp 00007fff3b87da78, rbp 00007fff3b87dff0
+   rsi 000000000000000b, rdi 000000000000101b, r8  0000000000000020
+   r9  00007fff3b87d65f, r10 00007fff3b87d800, r11 0000000000000206
+   r12 00007fff3b87e038, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b56d14f6370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b56d1a3a4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b56d1a26b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001012, rsp 00007ffc7b530e08, rbp 00007ffc7b531380
+   rsi 000000000000000b, rdi 0000000000001012, r8  0000000000000020
+   r9  00007ffc7b5309ef, r10 00007ffc7b530b90, r11 0000000000000202
+   r12 00007ffc7b5313c8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2abec67c1370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2abec6d054a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2abec6cf1b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-311Gss_B.com
+work/CAM-B3LYP_6-311+Gss_Be.com
+work/CAM-B3LYP_6-311Gss_Be.com
+work/CAM-B3LYP_6-311+Gss_Br.com
+work/CAM-B3LYP_6-311Gss_Br.com
+work/CAM-B3LYP_6-311+Gss_C.com
+work/CAM-B3LYP_6-311Gss_C.com
+work/CAM-B3LYP_6-311+Gss_Cl.com
+work/CAM-B3LYP_6-311Gss_Cl.com
+work/CAM-B3LYP_6-311+Gs_S.com
+work/CAM-B3LYP_6-311+Gss_F.com
+work/CAM-B3LYP_6-311Gss_F.com
+work/CAM-B3LYP_6-311+Gss_H.com
+work/CAM-B3LYP_6-311Gss_H.com
+work/CAM-B3LYP_6-311+Gss_He.com
+work/CAM-B3LYP_6-311Gss_He.com
+work/CAM-B3LYP_6-311+Gss_I.com
+work/CAM-B3LYP_6-311Gss_I.com
+work/CAM-B3LYP_6-311+Gs_Si.com
+work/CAM-B3LYP_6-311+Gss_Li.com
+work/CAM-B3LYP_6-311Gss_Li.com
+work/CAM-B3LYP_6-311+Gss_Na.com
+work/CAM-B3LYP_6-311Gss_Na.com
+work/CAM-B3LYP_6-311+Gss_N.com
+work/CAM-B3LYP_6-311Gss_N.com
+work/CAM-B3LYP_6-311+Gss_Ne.com
+work/CAM-B3LYP_6-311Gss_Ne.com
+work/CAM-B3LYP_6-311+Gss_O.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000107d, rsp 00007ffc813d0328, rbp 00007ffc813d08a0
+   rsi 000000000000000b, rdi 000000000000107d, r8  0000000000000020
+   r9  00007ffc813cff0f, r10 00007ffc813d00b0, r11 0000000000000206
+   r12 00007ffc813d08e8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b065b97f370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b065bec34a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b065beafb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000108e, rsp 00007ffe1ad38f88, rbp 00007ffe1ad39500
+   rsi 000000000000000b, rdi 000000000000108e, r8  0000000000000020
+   r9  00007ffe1ad38b6f, r10 00007ffe1ad38d10, r11 0000000000000206
+   r12 00007ffe1ad39548, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b4acc72d370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b4accc714a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b4accc5db35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-311Gss_O.com
+work/CAM-B3LYP_6-311+Gss_P.com
+work/CAM-B3LYP_6-311Gss_P.com
+work/CAM-B3LYP_6-311+Gss_S.com
+work/CAM-B3LYP_6-311Gss_S.com
+work/CAM-B3LYP_6-311+Gss_Si.com
+work/CAM-B3LYP_6-311Gss_Si.com
+work/CAM-B3LYP_6-31G_B.com
+work/CAM-B3LYP_6-31G_Be.com
+work/CAM-B3LYP_6-31G_Br.com
+work/CAM-B3LYP_6-31G_C.com
+work/CAM-B3LYP_6-31G_Cl.com
+work/CAM-B3LYP_6-31G_F.com
+work/CAM-B3LYP_6-31G_H.com
+work/CAM-B3LYP_6-31G_He.com
+work/CAM-B3LYP_6-31G_I.com
+work/CAM-B3LYP_6-31G_Li.com
+work/CAM-B3LYP_6-31G_Na.com
+work/CAM-B3LYP_6-31G_N.com
+work/CAM-B3LYP_6-31G_Ne.com
+work/CAM-B3LYP_6-31G_O.com
+work/CAM-B3LYP_6-31G_P.com
+work/CAM-B3LYP_6-31+Gs_B.com
+work/CAM-B3LYP_6-31Gs_B.com
+work/CAM-B3LYP_6-31+Gs_Be.com
+work/CAM-B3LYP_6-31Gs_Be.com
+work/CAM-B3LYP_6-31+Gs_Br.com
+work/CAM-B3LYP_6-31Gs_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000010c0, rsp 00007ffc7c5d01e8, rbp 00007ffc7c5d0760
+   rsi 000000000000000b, rdi 00000000000010c0, r8  0000000000000020
+   r9  00007ffc7c5cfdcf, r10 00007ffc7c5cff70, r11 0000000000000206
+   r12 00007ffc7c5d07a8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b92ff6a7370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b92ffbeb4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b92ffbd7b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-31+Gs_C.com
+work/CAM-B3LYP_6-31Gs_C.com
+work/CAM-B3LYP_6-31+Gs_Cl.com
+work/CAM-B3LYP_6-31Gs_Cl.com
+work/CAM-B3LYP_6-31G_S.com
+work/CAM-B3LYP_6-31+Gs_F.com
+work/CAM-B3LYP_6-31Gs_F.com
+work/CAM-B3LYP_6-31+Gs_H.com
+work/CAM-B3LYP_6-31Gs_H.com
+work/CAM-B3LYP_6-31+Gs_He.com
+work/CAM-B3LYP_6-31Gs_He.com
+work/CAM-B3LYP_6-31+Gs_I.com
+work/CAM-B3LYP_6-31Gs_I.com
+work/CAM-B3LYP_6-31G_Si.com
+work/CAM-B3LYP_6-31+Gs_Li.com
+work/CAM-B3LYP_6-31Gs_Li.com
+work/CAM-B3LYP_6-31+Gs_Na.com
+work/CAM-B3LYP_6-31Gs_Na.com
+work/CAM-B3LYP_6-31+Gs_N.com
+work/CAM-B3LYP_6-31Gs_N.com
+work/CAM-B3LYP_6-31+Gs_Ne.com
+work/CAM-B3LYP_6-31Gs_Ne.com
+work/CAM-B3LYP_6-31+Gs_O.com
+work/CAM-B3LYP_6-31Gs_O.com
+work/CAM-B3LYP_6-31+Gs_P.com
+work/CAM-B3LYP_6-31Gs_P.com
+work/CAM-B3LYP_6-31+Gss_B.com
+work/CAM-B3LYP_6-31Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000113c, rsp 00007ffcd89551f8, rbp 00007ffcd8955770
+   rsi 000000000000000b, rdi 000000000000113c, r8  0000000000000020
+   r9  00007ffcd8954ddf, r10 00007ffcd8954f80, r11 0000000000000202
+   r12 00007ffcd89557b8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b6514fa2370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b65154e64a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b65154d2b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000113a, rsp 00007ffd661fba28, rbp 00007ffd661fbfa0
+   rsi 000000000000000b, rdi 000000000000113a, r8  0000000000000020
+   r9  00007ffd661fb60f, r10 00007ffd661fb7b0, r11 0000000000000206
+   r12 00007ffd661fbfe8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2acb79c64370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2acb7a1a84a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2acb7a194b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-31+Gss_Be.com
+work/CAM-B3LYP_6-31Gss_Be.com
+work/CAM-B3LYP_6-31+Gss_Br.com
+work/CAM-B3LYP_6-31Gss_Br.com
+work/CAM-B3LYP_6-31+Gss_C.com
+work/CAM-B3LYP_6-31Gss_C.com
+work/CAM-B3LYP_6-31+Gss_Cl.com
+work/CAM-B3LYP_6-31Gss_Cl.com
+work/CAM-B3LYP_6-31+Gs_S.com
+work/CAM-B3LYP_6-31Gs_S.com
+work/CAM-B3LYP_6-31+Gss_F.com
+work/CAM-B3LYP_6-31Gss_F.com
+work/CAM-B3LYP_6-31+Gss_H.com
+work/CAM-B3LYP_6-31Gss_H.com
+work/CAM-B3LYP_6-31+Gss_He.com
+work/CAM-B3LYP_6-31Gss_He.com
+work/CAM-B3LYP_6-31+Gss_I.com
+work/CAM-B3LYP_6-31Gss_I.com
+work/CAM-B3LYP_6-31+Gs_Si.com
+work/CAM-B3LYP_6-31Gs_Si.com
+work/CAM-B3LYP_6-31+Gss_Li.com
+work/CAM-B3LYP_6-31Gss_Li.com
+work/CAM-B3LYP_6-31+Gss_Na.com
+work/CAM-B3LYP_6-31Gss_Na.com
+work/CAM-B3LYP_6-31+Gss_N.com
+work/CAM-B3LYP_6-31Gss_N.com
+work/CAM-B3LYP_6-31+Gss_Ne.com
+work/CAM-B3LYP_6-31Gss_Ne.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000011a9, rsp 00007fffb47e2368, rbp 00007fffb47e28e0
+   rsi 000000000000000b, rdi 00000000000011a9, r8  0000000000000020
+   r9  00007fffb47e1f4f, r10 00007fffb47e20f0, r11 0000000000000202
+   r12 00007fffb47e2928, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b53851b1370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b53856f54a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b53856e1b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000011af, rsp 00007ffcebb553d8, rbp 00007ffcebb55950
+   rsi 000000000000000b, rdi 00000000000011af, r8  0000000000000020
+   r9  00007ffcebb54fbf, r10 00007ffcebb55160, r11 0000000000000206
+   r12 00007ffcebb55998, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b0d807cc370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b0d80d104a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b0d80cfcb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_6-31+Gss_O.com
+work/CAM-B3LYP_6-31Gss_O.com
+work/CAM-B3LYP_6-31+Gss_P.com
+work/CAM-B3LYP_6-31Gss_P.com
+work/CAM-B3LYP_6-31+Gss_S.com
+work/CAM-B3LYP_6-31Gss_S.com
+work/CAM-B3LYP_6-31+Gss_Si.com
+work/CAM-B3LYP_6-31Gss_Si.com
+work/CAM-B3LYP_LanL2DZ_B.com
+work/CAM-B3LYP_LanL2DZ_Be.com
+work/CAM-B3LYP_LanL2DZ_Br.com
+work/CAM-B3LYP_LanL2DZ_C.com
+work/CAM-B3LYP_LanL2DZ_Cl.com
+work/CAM-B3LYP_LanL2DZ_F.com
+work/CAM-B3LYP_LanL2DZ_H.com
+work/CAM-B3LYP_LanL2DZ_He.com
+work/CAM-B3LYP_LanL2DZ_I.com
+work/CAM-B3LYP_LanL2DZ_Li.com
+work/CAM-B3LYP_LanL2DZ_Na.com
+work/CAM-B3LYP_LanL2DZ_N.com
+work/CAM-B3LYP_LanL2DZ_Ne.com
+work/CAM-B3LYP_LanL2DZ_O.com
+work/CAM-B3LYP_LanL2DZ_P.com
+work/CAM-B3LYP_LanL2DZ_S.com
+work/CAM-B3LYP_LanL2DZ_Si.com
+work/CAM-B3LYP_STO-3G_B.com
+work/CAM-B3LYP_STO-3G_Be.com
+work/CAM-B3LYP_STO-3G_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000001435fb0, rcx ffffffffffffffff
+   rdx 00000000000011fc, rsp 00007ffd492d7718, rbp 00007ffd492d7740
+   rsi 000000000000000b, rdi 00000000000011fc, r8  0000000000000020
+   r9  00007ffd492d72ff, r10 00007ffd492d74a0, r11 0000000000000206
+   r12 00000000013fa978, r13 00007ffd492d7998, r14 00002b2f991c80c0
+   r15 00000000013fa980
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b2f984da370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b2f98a1e4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6da751]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x657097]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x417868]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x41368b]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x408804]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b2f98a0ab35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/CAM-B3LYP_STO-3G_C.com
+work/CAM-B3LYP_STO-3G_Cl.com
+work/CAM-B3LYP_STO-3G_F.com
+work/CAM-B3LYP_STO-3G_H.com
+work/CAM-B3LYP_STO-3G_He.com
+work/CAM-B3LYP_STO-3G_I.com
+work/CAM-B3LYP_STO-3G_Li.com
+work/CAM-B3LYP_STO-3G_Na.com
+work/CAM-B3LYP_STO-3G_N.com
+work/CAM-B3LYP_STO-3G_Ne.com
+work/CAM-B3LYP_STO-3G_O.com
+work/CAM-B3LYP_STO-3G_P.com
+work/CAM-B3LYP_STO-3G_S.com
+work/CAM-B3LYP_STO-3G_Si.com
+work/LC-BLYP_3-21G_B.com
+work/LC-BLYP_3-21G_Be.com
+work/LC-BLYP_3-21G_Br.com
+work/LC-BLYP_3-21G_C.com
+work/LC-BLYP_3-21G_Cl.com
+work/LC-BLYP_3-21G_F.com
+work/LC-BLYP_3-21G_H.com
+work/LC-BLYP_3-21G_He.com
+work/LC-BLYP_3-21G_I.com
+work/LC-BLYP_3-21G_Li.com
+work/LC-BLYP_3-21G_Na.com
+work/LC-BLYP_3-21G_N.com
+work/LC-BLYP_3-21G_Ne.com
+work/LC-BLYP_3-21G_O.com
+work/LC-BLYP_3-21G_P.com
+work/LC-BLYP_3-21+Gs_B.com
+work/LC-BLYP_3-21Gs_B.com
+work/LC-BLYP_3-21+Gs_Be.com
+work/LC-BLYP_3-21Gs_Be.com
+work/LC-BLYP_3-21+Gs_Br.com
+work/LC-BLYP_3-21Gs_Br.com
+work/LC-BLYP_3-21+Gs_C.com
+work/LC-BLYP_3-21Gs_C.com
+work/LC-BLYP_3-21+Gs_Cl.com
+work/LC-BLYP_3-21Gs_Cl.com
+work/LC-BLYP_3-21G_S.com
+work/LC-BLYP_3-21+Gs_F.com
+work/LC-BLYP_3-21Gs_F.com
+work/LC-BLYP_3-21+Gs_H.com
+work/LC-BLYP_3-21Gs_H.com
+work/LC-BLYP_3-21+Gs_He.com
+work/LC-BLYP_3-21Gs_He.com
+work/LC-BLYP_3-21+Gs_I.com
+work/LC-BLYP_3-21Gs_I.com
+work/LC-BLYP_3-21G_Si.com
+work/LC-BLYP_3-21+Gs_Li.com
+work/LC-BLYP_3-21Gs_Li.com
+work/LC-BLYP_3-21+Gs_Na.com
+work/LC-BLYP_3-21Gs_Na.com
+work/LC-BLYP_3-21+Gs_N.com
+work/LC-BLYP_3-21Gs_N.com
+work/LC-BLYP_3-21+Gs_Ne.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001310, rsp 00007ffdaa762468, rbp 00007ffdaa7629e0
+   rsi 000000000000000b, rdi 0000000000001310, r8  0000000000000020
+   r9  00007ffdaa76204f, r10 00007ffdaa7621f0, r11 0000000000000202
+   r12 00007ffdaa762a28, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b5f5f9c9370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b5f5ff0d4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b5f5fef9b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001311, rsp 00007fff4eabaf48, rbp 00007fff4eabb4c0
+   rsi 000000000000000b, rdi 0000000000001311, r8  0000000000000020
+   r9  00007fff4eabab2f, r10 00007fff4eabacd0, r11 0000000000000206
+   r12 00007fff4eabb508, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b66afe59370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b66b039d4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b66b0389b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_3-21Gs_Ne.com
+work/LC-BLYP_3-21+Gs_O.com
+work/LC-BLYP_3-21Gs_O.com
+work/LC-BLYP_3-21+Gs_P.com
+work/LC-BLYP_3-21Gs_P.com
+work/LC-BLYP_3-21+Gs_S.com
+work/LC-BLYP_3-21Gs_S.com
+work/LC-BLYP_3-21+Gs_Si.com
+work/LC-BLYP_3-21Gs_Si.com
+work/LC-BLYP_6-311G_B.com
+work/LC-BLYP_6-311G_Be.com
+work/LC-BLYP_6-311G_Br.com
+work/LC-BLYP_6-311G_C.com
+work/LC-BLYP_6-311G_Cl.com
+work/LC-BLYP_6-311G_F.com
+work/LC-BLYP_6-311G_H.com
+work/LC-BLYP_6-311G_He.com
+work/LC-BLYP_6-311G_I.com
+work/LC-BLYP_6-311G_Li.com
+work/LC-BLYP_6-311G_Na.com
+work/LC-BLYP_6-311G_N.com
+work/LC-BLYP_6-311G_Ne.com
+work/LC-BLYP_6-311G_O.com
+work/LC-BLYP_6-311G_P.com
+work/LC-BLYP_6-311+Gs_B.com
+work/LC-BLYP_6-311+Gs_Be.com
+work/LC-BLYP_6-311+Gs_Br.com
+work/LC-BLYP_6-311+Gs_C.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 000000000000134e, rsp 00007ffff91fcae8, rbp 00007ffff91fd060
+   rsi 000000000000000b, rdi 000000000000134e, r8  0000000000000020
+   r9  00007ffff91fc6cf, r10 00007ffff91fc870, r11 0000000000000206
+   r12 00007ffff91fd0a8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b74be368370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b74be8ac4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b74be898b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_6-311+Gs_Cl.com
+work/LC-BLYP_6-311G_S.com
+work/LC-BLYP_6-311+Gs_F.com
+work/LC-BLYP_6-311+Gs_H.com
+work/LC-BLYP_6-311+Gs_He.com
+work/LC-BLYP_6-311+Gs_I.com
+work/LC-BLYP_6-311G_Si.com
+work/LC-BLYP_6-311+Gs_Li.com
+work/LC-BLYP_6-311+Gs_Na.com
+work/LC-BLYP_6-311+Gs_N.com
+work/LC-BLYP_6-311+Gs_Ne.com
+work/LC-BLYP_6-311+Gs_O.com
+work/LC-BLYP_6-311+Gs_P.com
+work/LC-BLYP_6-311+Gss_B.com
+work/LC-BLYP_6-311Gss_B.com
+work/LC-BLYP_6-311+Gss_Be.com
+work/LC-BLYP_6-311Gss_Be.com
+work/LC-BLYP_6-311+Gss_Br.com
+work/LC-BLYP_6-311Gss_Br.com
+work/LC-BLYP_6-311+Gss_C.com
+work/LC-BLYP_6-311Gss_C.com
+work/LC-BLYP_6-311+Gss_Cl.com
+work/LC-BLYP_6-311Gss_Cl.com
+work/LC-BLYP_6-311+Gs_S.com
+work/LC-BLYP_6-311+Gss_F.com
+work/LC-BLYP_6-311Gss_F.com
+work/LC-BLYP_6-311+Gss_H.com
+work/LC-BLYP_6-311Gss_H.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000013cb, rsp 00007ffcab9551e8, rbp 00007ffcab955760
+   rsi 000000000000000b, rdi 00000000000013cb, r8  0000000000000020
+   r9  00007ffcab954dcf, r10 00007ffcab954f70, r11 0000000000000206
+   r12 00007ffcab9557a8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b1aa67d0370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b1aa6d144a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b1aa6d00b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_6-311+Gss_He.com
+work/LC-BLYP_6-311Gss_He.com
+work/LC-BLYP_6-311+Gss_I.com
+work/LC-BLYP_6-311Gss_I.com
+work/LC-BLYP_6-311+Gs_Si.com
+work/LC-BLYP_6-311+Gss_Li.com
+work/LC-BLYP_6-311Gss_Li.com
+work/LC-BLYP_6-311+Gss_Na.com
+work/LC-BLYP_6-311Gss_Na.com
+work/LC-BLYP_6-311+Gss_N.com
+work/LC-BLYP_6-311Gss_N.com
+work/LC-BLYP_6-311+Gss_Ne.com
+work/LC-BLYP_6-311Gss_Ne.com
+work/LC-BLYP_6-311+Gss_O.com
+work/LC-BLYP_6-311Gss_O.com
+work/LC-BLYP_6-311+Gss_P.com
+work/LC-BLYP_6-311Gss_P.com
+work/LC-BLYP_6-311+Gss_S.com
+work/LC-BLYP_6-311Gss_S.com
+work/LC-BLYP_6-311+Gss_Si.com
+work/LC-BLYP_6-311Gss_Si.com
+work/LC-BLYP_6-31G_B.com
+work/LC-BLYP_6-31G_Be.com
+work/LC-BLYP_6-31G_Br.com
+work/LC-BLYP_6-31G_C.com
+work/LC-BLYP_6-31G_Cl.com
+work/LC-BLYP_6-31G_F.com
+work/LC-BLYP_6-31G_H.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001446, rsp 00007ffdb7cb1e18, rbp 00007ffdb7cb2390
+   rsi 000000000000000b, rdi 0000000000001446, r8  0000000000000020
+   r9  00007ffdb7cb19ff, r10 00007ffdb7cb1ba0, r11 0000000000000206
+   r12 00007ffdb7cb23d8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2acf6dc26370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2acf6e16a4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2acf6e156b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001448, rsp 00007ffe50640f68, rbp 00007ffe506414e0
+   rsi 000000000000000b, rdi 0000000000001448, r8  0000000000000020
+   r9  00007ffe50640b4f, r10 00007ffe50640cf0, r11 0000000000000202
+   r12 00007ffe50641528, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ab95d887370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ab95ddcb4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ab95ddb7b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_6-31G_He.com
+work/LC-BLYP_6-31G_I.com
+work/LC-BLYP_6-31G_Li.com
+work/LC-BLYP_6-31G_Na.com
+work/LC-BLYP_6-31G_N.com
+work/LC-BLYP_6-31G_Ne.com
+work/LC-BLYP_6-31G_O.com
+work/LC-BLYP_6-31G_P.com
+work/LC-BLYP_6-31+Gs_B.com
+work/LC-BLYP_6-31Gs_B.com
+work/LC-BLYP_6-31+Gs_Be.com
+work/LC-BLYP_6-31Gs_Be.com
+work/LC-BLYP_6-31+Gs_Br.com
+work/LC-BLYP_6-31Gs_Br.com
+work/LC-BLYP_6-31+Gs_C.com
+work/LC-BLYP_6-31Gs_C.com
+work/LC-BLYP_6-31+Gs_Cl.com
+work/LC-BLYP_6-31Gs_Cl.com
+work/LC-BLYP_6-31G_S.com
+work/LC-BLYP_6-31+Gs_F.com
+work/LC-BLYP_6-31Gs_F.com
+work/LC-BLYP_6-31+Gs_H.com
+work/LC-BLYP_6-31Gs_H.com
+work/LC-BLYP_6-31+Gs_He.com
+work/LC-BLYP_6-31Gs_He.com
+work/LC-BLYP_6-31+Gs_I.com
+work/LC-BLYP_6-31Gs_I.com
+work/LC-BLYP_6-31G_Si.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000014c2, rsp 00007ffe41f08518, rbp 00007ffe41f08a90
+   rsi 000000000000000b, rdi 00000000000014c2, r8  0000000000000020
+   r9  00007ffe41f080ff, r10 00007ffe41f082a0, r11 0000000000000206
+   r12 00007ffe41f08ad8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b57df5e9370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b57dfb2d4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b57dfb19b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000014cb, rsp 00007ffe1199b788, rbp 00007ffe1199bd00
+   rsi 000000000000000b, rdi 00000000000014cb, r8  0000000000000020
+   r9  00007ffe1199b36f, r10 00007ffe1199b510, r11 0000000000000206
+   r12 00007ffe1199bd48, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2aed73fb0370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2aed744f44a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2aed744e0b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000014b6, rsp 00007ffda2db9528, rbp 00007ffda2db9aa0
+   rsi 000000000000000b, rdi 00000000000014b6, r8  0000000000000020
+   r9  00007ffda2db910f, r10 00007ffda2db92b0, r11 0000000000000206
+   r12 00007ffda2db9ae8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b161c6a0370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b161cbe44a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b161cbd0b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_6-31+Gs_Li.com
+work/LC-BLYP_6-31Gs_Li.com
+work/LC-BLYP_6-31+Gs_Na.com
+work/LC-BLYP_6-31Gs_Na.com
+work/LC-BLYP_6-31+Gs_N.com
+work/LC-BLYP_6-31Gs_N.com
+work/LC-BLYP_6-31+Gs_Ne.com
+work/LC-BLYP_6-31Gs_Ne.com
+work/LC-BLYP_6-31+Gs_O.com
+work/LC-BLYP_6-31Gs_O.com
+work/LC-BLYP_6-31+Gs_P.com
+work/LC-BLYP_6-31Gs_P.com
+work/LC-BLYP_6-31+Gss_B.com
+work/LC-BLYP_6-31Gss_B.com
+work/LC-BLYP_6-31+Gss_Be.com
+work/LC-BLYP_6-31Gss_Be.com
+work/LC-BLYP_6-31+Gss_Br.com
+work/LC-BLYP_6-31Gss_Br.com
+work/LC-BLYP_6-31+Gss_C.com
+work/LC-BLYP_6-31Gss_C.com
+work/LC-BLYP_6-31+Gss_Cl.com
+work/LC-BLYP_6-31Gss_Cl.com
+work/LC-BLYP_6-31+Gs_S.com
+work/LC-BLYP_6-31Gs_S.com
+work/LC-BLYP_6-31+Gss_F.com
+work/LC-BLYP_6-31Gss_F.com
+work/LC-BLYP_6-31+Gss_H.com
+work/LC-BLYP_6-31Gss_H.com
+work/LC-BLYP_6-31+Gss_He.com
+work/LC-BLYP_6-31Gss_He.com
+work/LC-BLYP_6-31+Gss_I.com
+work/LC-BLYP_6-31Gss_I.com
+work/LC-BLYP_6-31+Gs_Si.com
+work/LC-BLYP_6-31Gs_Si.com
+work/LC-BLYP_6-31+Gss_Li.com
+work/LC-BLYP_6-31Gss_Li.com
+work/LC-BLYP_6-31+Gss_Na.com
+work/LC-BLYP_6-31Gss_Na.com
+work/LC-BLYP_6-31+Gss_N.com
+work/LC-BLYP_6-31Gss_N.com
+work/LC-BLYP_6-31+Gss_Ne.com
+work/LC-BLYP_6-31Gss_Ne.com
+work/LC-BLYP_6-31+Gss_O.com
+work/LC-BLYP_6-31Gss_O.com
+work/LC-BLYP_6-31+Gss_P.com
+work/LC-BLYP_6-31Gss_P.com
+work/LC-BLYP_6-31+Gss_S.com
+work/LC-BLYP_6-31Gss_S.com
+work/LC-BLYP_6-31+Gss_Si.com
+work/LC-BLYP_6-31Gss_Si.com
+work/LC-BLYP_LanL2DZ_B.com
+work/LC-BLYP_LanL2DZ_Be.com
+work/LC-BLYP_LanL2DZ_Br.com
+work/LC-BLYP_LanL2DZ_C.com
+work/LC-BLYP_LanL2DZ_Cl.com
+work/LC-BLYP_LanL2DZ_F.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001604, rsp 00007ffdaa945348, rbp 00007ffdaa9458c0
+   rsi 000000000000000b, rdi 0000000000001604, r8  0000000000000020
+   r9  00007ffdaa944f2f, r10 00007ffdaa9450d0, r11 0000000000000206
+   r12 00007ffdaa945908, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b23bdee0370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b23be4244a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b23be410b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001611, rsp 00007ffe604df348, rbp 00007ffe604df8c0
+   rsi 000000000000000b, rdi 0000000000001611, r8  0000000000000020
+   r9  00007ffe604def2f, r10 00007ffe604df0d0, r11 0000000000000206
+   r12 00007ffe604df908, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b9e13628370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b9e13b6c4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b9e13b58b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/LC-BLYP_LanL2DZ_H.com
+work/LC-BLYP_LanL2DZ_He.com
+work/LC-BLYP_LanL2DZ_I.com
+work/LC-BLYP_LanL2DZ_Li.com
+work/LC-BLYP_LanL2DZ_Na.com
+work/LC-BLYP_LanL2DZ_N.com
+work/LC-BLYP_LanL2DZ_Ne.com
+work/LC-BLYP_LanL2DZ_O.com
+work/LC-BLYP_LanL2DZ_P.com
+work/LC-BLYP_LanL2DZ_S.com
+work/LC-BLYP_LanL2DZ_Si.com
+work/LC-BLYP_STO-3G_B.com
+work/LC-BLYP_STO-3G_Be.com
+work/LC-BLYP_STO-3G_Br.com
+work/LC-BLYP_STO-3G_C.com
+work/LC-BLYP_STO-3G_Cl.com
+work/LC-BLYP_STO-3G_F.com
+work/LC-BLYP_STO-3G_H.com
+work/LC-BLYP_STO-3G_He.com
+work/LC-BLYP_STO-3G_I.com
+work/LC-BLYP_STO-3G_Li.com
+work/LC-BLYP_STO-3G_Na.com
+work/LC-BLYP_STO-3G_N.com
+work/LC-BLYP_STO-3G_Ne.com
+work/LC-BLYP_STO-3G_O.com
+work/LC-BLYP_STO-3G_P.com
+work/LC-BLYP_STO-3G_S.com
+work/LC-BLYP_STO-3G_Si.com
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000001435fb0, rcx ffffffffffffffff
+   rdx 0000000000001661, rsp 00007ffceffe3cd8, rbp 00007ffceffe3d00
+   rsi 000000000000000b, rdi 0000000000001661, r8  0000000000000020
+   r9  00007ffceffe38bf, r10 00007ffceffe3a60, r11 0000000000000206
+   r12 00000000013fa978, r13 00007ffceffe3f58, r14 00002b158ded10c0
+   r15 00000000013fa980
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b158d1e3370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b158d7274a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6da751]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x657097]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x417868]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x41368b]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x408804]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b158d713b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_3-21G_B.com
+work/X3LYP_3-21G_Be.com
+work/X3LYP_3-21G_Br.com
+work/X3LYP_3-21G_C.com
+work/X3LYP_3-21G_Cl.com
+work/X3LYP_3-21G_F.com
+work/X3LYP_3-21G_H.com
+work/X3LYP_3-21G_He.com
+work/X3LYP_3-21G_I.com
+work/X3LYP_3-21G_Li.com
+work/X3LYP_3-21G_Na.com
+work/X3LYP_3-21G_N.com
+work/X3LYP_3-21G_Ne.com
+work/X3LYP_3-21G_O.com
+work/X3LYP_3-21G_P.com
+work/X3LYP_3-21+Gs_B.com
+work/X3LYP_3-21Gs_B.com
+work/X3LYP_3-21+Gs_Be.com
+work/X3LYP_3-21Gs_Be.com
+work/X3LYP_3-21+Gs_Br.com
+work/X3LYP_3-21Gs_Br.com
+work/X3LYP_3-21+Gs_C.com
+work/X3LYP_3-21Gs_C.com
+work/X3LYP_3-21+Gs_Cl.com
+work/X3LYP_3-21Gs_Cl.com
+work/X3LYP_3-21G_S.com
+work/X3LYP_3-21+Gs_F.com
+work/X3LYP_3-21Gs_F.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000016c4, rsp 00007ffea4525278, rbp 00007ffea45257f0
+   rsi 000000000000000b, rdi 00000000000016c4, r8  0000000000000020
+   r9  00007ffea4524e5f, r10 00007ffea4525000, r11 0000000000000206
+   r12 00007ffea4525838, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b66cabb2370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b66cb0f64a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b66cb0e2b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_3-21+Gs_H.com
+work/X3LYP_3-21Gs_H.com
+work/X3LYP_3-21+Gs_He.com
+work/X3LYP_3-21Gs_He.com
+work/X3LYP_3-21+Gs_I.com
+work/X3LYP_3-21Gs_I.com
+work/X3LYP_3-21G_Si.com
+work/X3LYP_3-21+Gs_Li.com
+work/X3LYP_3-21Gs_Li.com
+work/X3LYP_3-21+Gs_Na.com
+work/X3LYP_3-21Gs_Na.com
+work/X3LYP_3-21+Gs_N.com
+work/X3LYP_3-21Gs_N.com
+work/X3LYP_3-21+Gs_Ne.com
+work/X3LYP_3-21Gs_Ne.com
+work/X3LYP_3-21+Gs_O.com
+work/X3LYP_3-21Gs_O.com
+work/X3LYP_3-21+Gs_P.com
+work/X3LYP_3-21Gs_P.com
+work/X3LYP_3-21+Gs_S.com
+work/X3LYP_3-21Gs_S.com
+work/X3LYP_3-21+Gs_Si.com
+work/X3LYP_3-21Gs_Si.com
+work/X3LYP_6-311G_B.com
+work/X3LYP_6-311G_Be.com
+work/X3LYP_6-311G_Br.com
+work/X3LYP_6-311G_C.com
+work/X3LYP_6-311G_Cl.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001735, rsp 00007ffd24318168, rbp 00007ffd243186e0
+   rsi 000000000000000b, rdi 0000000000001735, r8  0000000000000020
+   r9  00007ffd24317d4f, r10 00007ffd24317ef0, r11 0000000000000202
+   r12 00007ffd24318728, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2aafb4723370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2aafb4c674a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x47d126]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x414357]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2aafb4c53b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-311G_F.com
+work/X3LYP_6-311G_H.com
+work/X3LYP_6-311G_He.com
+work/X3LYP_6-311G_I.com
+work/X3LYP_6-311G_Li.com
+work/X3LYP_6-311G_Na.com
+work/X3LYP_6-311G_N.com
+work/X3LYP_6-311G_Ne.com
+work/X3LYP_6-311G_O.com
+work/X3LYP_6-311G_P.com
+work/X3LYP_6-311+Gs_B.com
+work/X3LYP_6-311+Gs_Be.com
+work/X3LYP_6-311+Gs_Br.com
+work/X3LYP_6-311+Gs_C.com
+work/X3LYP_6-311+Gs_Cl.com
+work/X3LYP_6-311G_S.com
+work/X3LYP_6-311+Gs_F.com
+work/X3LYP_6-311+Gs_H.com
+work/X3LYP_6-311+Gs_He.com
+work/X3LYP_6-311+Gs_I.com
+work/X3LYP_6-311G_Si.com
+work/X3LYP_6-311+Gs_Li.com
+work/X3LYP_6-311+Gs_Na.com
+work/X3LYP_6-311+Gs_N.com
+work/X3LYP_6-311+Gs_Ne.com
+work/X3LYP_6-311+Gs_O.com
+work/X3LYP_6-311+Gs_P.com
+work/X3LYP_6-311+Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000017a8, rsp 00007ffd029ddc38, rbp 00007ffd029de1b0
+   rsi 000000000000000b, rdi 00000000000017a8, r8  0000000000000020
+   r9  00007ffd029dd81f, r10 00007ffd029dd9c0, r11 0000000000000202
+   r12 00007ffd029de1f8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b21a3067370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b21a35ab4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b21a3597b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000017b0, rsp 00007ffc565f36f8, rbp 00007ffc565f3c70
+   rsi 000000000000000b, rdi 00000000000017b0, r8  0000000000000020
+   r9  00007ffc565f32df, r10 00007ffc565f3480, r11 0000000000000202
+   r12 00007ffc565f3cb8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b520ed19370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b520f25d4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b520f249b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-311Gss_B.com
+work/X3LYP_6-311+Gss_Be.com
+work/X3LYP_6-311Gss_Be.com
+work/X3LYP_6-311+Gss_Br.com
+work/X3LYP_6-311Gss_Br.com
+work/X3LYP_6-311+Gss_C.com
+work/X3LYP_6-311Gss_C.com
+work/X3LYP_6-311+Gss_Cl.com
+work/X3LYP_6-311Gss_Cl.com
+work/X3LYP_6-311+Gs_S.com
+work/X3LYP_6-311+Gss_F.com
+work/X3LYP_6-311Gss_F.com
+work/X3LYP_6-311+Gss_H.com
+work/X3LYP_6-311Gss_H.com
+work/X3LYP_6-311+Gss_He.com
+work/X3LYP_6-311Gss_He.com
+work/X3LYP_6-311+Gss_I.com
+work/X3LYP_6-311Gss_I.com
+work/X3LYP_6-311+Gs_Si.com
+work/X3LYP_6-311+Gss_Li.com
+work/X3LYP_6-311Gss_Li.com
+work/X3LYP_6-311+Gss_Na.com
+work/X3LYP_6-311Gss_Na.com
+work/X3LYP_6-311+Gss_N.com
+work/X3LYP_6-311Gss_N.com
+work/X3LYP_6-311+Gss_Ne.com
+work/X3LYP_6-311Gss_Ne.com
+work/X3LYP_6-311+Gss_O.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001809, rsp 00007ffcff993738, rbp 00007ffcff993cb0
+   rsi 000000000000000b, rdi 0000000000001809, r8  0000000000000020
+   r9  00007ffcff99331f, r10 00007ffcff9934c0, r11 0000000000000202
+   r12 00007ffcff993cf8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b4bef55d370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b4befaa14a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b4befa8db35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000017f5, rsp 00007ffc2e138bb8, rbp 00007ffc2e139130
+   rsi 000000000000000b, rdi 00000000000017f5, r8  0000000000000020
+   r9  00007ffc2e13879f, r10 00007ffc2e138940, r11 0000000000000206
+   r12 00007ffc2e139178, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2abefeeb2370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2abeff3f64a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x54a3ce]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e8f]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4142fe]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2abeff3e2b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-311Gss_O.com
+work/X3LYP_6-311+Gss_P.com
+work/X3LYP_6-311Gss_P.com
+work/X3LYP_6-311+Gss_S.com
+work/X3LYP_6-311Gss_S.com
+work/X3LYP_6-311+Gss_Si.com
+work/X3LYP_6-311Gss_Si.com
+work/X3LYP_6-31G_B.com
+work/X3LYP_6-31G_Be.com
+work/X3LYP_6-31G_Br.com
+work/X3LYP_6-31G_C.com
+work/X3LYP_6-31G_Cl.com
+work/X3LYP_6-31G_F.com
+work/X3LYP_6-31G_H.com
+work/X3LYP_6-31G_He.com
+work/X3LYP_6-31G_I.com
+work/X3LYP_6-31G_Li.com
+work/X3LYP_6-31G_Na.com
+work/X3LYP_6-31G_N.com
+work/X3LYP_6-31G_Ne.com
+work/X3LYP_6-31G_O.com
+work/X3LYP_6-31G_P.com
+work/X3LYP_6-31+Gs_B.com
+work/X3LYP_6-31Gs_B.com
+work/X3LYP_6-31+Gs_Be.com
+work/X3LYP_6-31Gs_Be.com
+work/X3LYP_6-31+Gs_Br.com
+work/X3LYP_6-31Gs_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001861, rsp 00007ffffed70928, rbp 00007ffffed70ea0
+   rsi 000000000000000b, rdi 0000000000001861, r8  0000000000000020
+   r9  00007ffffed7050f, r10 00007ffffed706b0, r11 0000000000000206
+   r12 00007ffffed70ee8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ab0a0dac370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ab0a12f04a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ab0a12dcb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-31+Gs_C.com
+work/X3LYP_6-31Gs_C.com
+work/X3LYP_6-31+Gs_Cl.com
+work/X3LYP_6-31Gs_Cl.com
+work/X3LYP_6-31G_S.com
+work/X3LYP_6-31+Gs_F.com
+work/X3LYP_6-31Gs_F.com
+work/X3LYP_6-31+Gs_H.com
+work/X3LYP_6-31Gs_H.com
+work/X3LYP_6-31+Gs_He.com
+work/X3LYP_6-31Gs_He.com
+work/X3LYP_6-31+Gs_I.com
+work/X3LYP_6-31Gs_I.com
+work/X3LYP_6-31G_Si.com
+work/X3LYP_6-31+Gs_Li.com
+work/X3LYP_6-31Gs_Li.com
+work/X3LYP_6-31+Gs_Na.com
+work/X3LYP_6-31Gs_Na.com
+work/X3LYP_6-31+Gs_N.com
+work/X3LYP_6-31Gs_N.com
+work/X3LYP_6-31+Gs_Ne.com
+work/X3LYP_6-31Gs_Ne.com
+work/X3LYP_6-31+Gs_O.com
+work/X3LYP_6-31Gs_O.com
+work/X3LYP_6-31+Gs_P.com
+work/X3LYP_6-31Gs_P.com
+work/X3LYP_6-31+Gss_B.com
+work/X3LYP_6-31Gss_B.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000018e8, rsp 00007fff6e2b1f08, rbp 00007fff6e2b2480
+   rsi 000000000000000b, rdi 00000000000018e8, r8  0000000000000020
+   r9  00007fff6e2b1aef, r10 00007fff6e2b1c90, r11 0000000000000202
+   r12 00007fff6e2b24c8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b5506d2f370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b55072734a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b550725fb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 00000000000018e2, rsp 00007ffe8b9d0ba8, rbp 00007ffe8b9d1120
+   rsi 000000000000000b, rdi 00000000000018e2, r8  0000000000000020
+   r9  00007ffe8b9d078f, r10 00007ffe8b9d0930, r11 0000000000000202
+   r12 00007ffe8b9d1168, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b9bb1f56370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b9bb249a4a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b9bb2486b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-31+Gss_Be.com
+work/X3LYP_6-31Gss_Be.com
+work/X3LYP_6-31+Gss_Br.com
+work/X3LYP_6-31Gss_Br.com
+work/X3LYP_6-31+Gss_C.com
+work/X3LYP_6-31Gss_C.com
+work/X3LYP_6-31+Gss_Cl.com
+work/X3LYP_6-31Gss_Cl.com
+work/X3LYP_6-31+Gs_S.com
+work/X3LYP_6-31Gs_S.com
+work/X3LYP_6-31+Gss_F.com
+work/X3LYP_6-31Gss_F.com
+work/X3LYP_6-31+Gss_H.com
+work/X3LYP_6-31Gss_H.com
+work/X3LYP_6-31+Gss_He.com
+work/X3LYP_6-31Gss_He.com
+work/X3LYP_6-31+Gss_I.com
+work/X3LYP_6-31Gss_I.com
+work/X3LYP_6-31+Gs_Si.com
+work/X3LYP_6-31Gs_Si.com
+work/X3LYP_6-31+Gss_Li.com
+work/X3LYP_6-31Gss_Li.com
+work/X3LYP_6-31+Gss_Na.com
+work/X3LYP_6-31Gss_Na.com
+work/X3LYP_6-31+Gss_N.com
+work/X3LYP_6-31Gss_N.com
+work/X3LYP_6-31+Gss_Ne.com
+work/X3LYP_6-31Gss_Ne.com
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001927, rsp 00007ffed3026d68, rbp 00007ffed30272e0
+   rsi 000000000000000b, rdi 0000000000001927, r8  0000000000000020
+   r9  00007ffed302694f, r10 00007ffed3026af0, r11 0000000000000202
+   r12 00007ffed3027328, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2acc95d70370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2acc962b44a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2acc962a0b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+Error: segmentation violation
+   rax 0000000000000000, rbx ffffffffffffffff, rcx ffffffffffffffff
+   rdx 0000000000001924, rsp 00007ffe5bdda7e8, rbp 00007ffe5bddad60
+   rsi 000000000000000b, rdi 0000000000001924, r8  0000000000000020
+   r9  00007ffe5bdda3cf, r10 00007ffe5bdda570, r11 0000000000000206
+   r12 00007ffe5bddada8, r13 0000000000000000, r14 0000000000000000
+   r15 00000000000003e6
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2b6b9a32f370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2b6b9a8734a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6466e1]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6c0447]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x672aaf]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4b0e26]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x44f507]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4141f0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x406ae7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2b6b9a85fb35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_6-31+Gss_O.com
+work/X3LYP_6-31Gss_O.com
+work/X3LYP_6-31+Gss_P.com
+work/X3LYP_6-31Gss_P.com
+work/X3LYP_6-31+Gss_S.com
+work/X3LYP_6-31Gss_S.com
+work/X3LYP_6-31+Gss_Si.com
+work/X3LYP_6-31Gss_Si.com
+work/X3LYP_LanL2DZ_B.com
+work/X3LYP_LanL2DZ_Be.com
+work/X3LYP_LanL2DZ_Br.com
+work/X3LYP_LanL2DZ_C.com
+work/X3LYP_LanL2DZ_Cl.com
+work/X3LYP_LanL2DZ_F.com
+work/X3LYP_LanL2DZ_H.com
+work/X3LYP_LanL2DZ_He.com
+work/X3LYP_LanL2DZ_I.com
+work/X3LYP_LanL2DZ_Li.com
+work/X3LYP_LanL2DZ_Na.com
+work/X3LYP_LanL2DZ_N.com
+work/X3LYP_LanL2DZ_Ne.com
+work/X3LYP_LanL2DZ_O.com
+work/X3LYP_LanL2DZ_P.com
+work/X3LYP_LanL2DZ_S.com
+work/X3LYP_LanL2DZ_Si.com
+work/X3LYP_STO-3G_B.com
+work/X3LYP_STO-3G_Be.com
+work/X3LYP_STO-3G_Br.com
+Error: segmentation violation
+   rax 0000000000000000, rbx 0000000001435fb0, rcx ffffffffffffffff
+   rdx 000000000000199f, rsp 00007ffc74c2c798, rbp 00007ffc74c2c7c0
+   rsi 000000000000000b, rdi 000000000000199f, r8  0000000000000020
+   r9  00007ffc74c2c37f, r10 00007ffc74c2c520, r11 0000000000000202
+   r12 00000000013fa978, r13 00007ffc74c2ca18, r14 00002ad68ab700c0
+   r15 00000000013fa980
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libpthread.so.0(+0xf370) [0x2ad689e82370]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(kill+0x7) [0x2ad68a3c64a7]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x627939]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x6da751]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x657097]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x417868]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x41368b]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x408804]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x4040b0]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403feb]
+  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libc.so.6(__libc_start_main+0xf5) [0x2ad68a3b2b35]
+  /fefs/opt/x86_64/Gaussian/g16/l301.exe() [0x403ee9]
+work/X3LYP_STO-3G_C.com
+work/X3LYP_STO-3G_Cl.com
+work/X3LYP_STO-3G_F.com
+work/X3LYP_STO-3G_H.com
+work/X3LYP_STO-3G_He.com
+work/X3LYP_STO-3G_I.com
+work/X3LYP_STO-3G_Li.com
+work/X3LYP_STO-3G_Na.com
+work/X3LYP_STO-3G_N.com
+work/X3LYP_STO-3G_Ne.com
+work/X3LYP_STO-3G_O.com
+work/X3LYP_STO-3G_P.com
+work/X3LYP_STO-3G_S.com
+work/X3LYP_STO-3G_Si.com
