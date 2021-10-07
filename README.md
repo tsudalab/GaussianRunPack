@@ -9,3 +9,5 @@ It is possible to evaluate the molecule with its multiple properties.
 3. [RDKit](https://anaconda.org/rdkit/rdkit)
 
 # Usage
+GaussianRunPack accept a sdf file or a gaussian chk file.
+> python main.py input_file
