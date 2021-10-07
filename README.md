@@ -51,7 +51,7 @@ npe:
 nne:
 	neutralization energy from a negatively charged molecule (geometry optimized)
 
-fluore:
+fluor:
 	wavelength (in nm) of fluorescence are computed. 
 	if you want to specify the state that emits fluorescence, you can specify the index of state like
 	“fluore=#” (# is an integer, default is “fluor=1”)
