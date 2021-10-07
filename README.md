@@ -16,46 +16,46 @@ By specifying the molecular properties you want as an option variables,
 the program will automatically calculate them. 
 
 The following options are currently available:
-opt
+opt:
 	just perform geometry optimization of the molecule.
 
-nmr
+nmr:
 	NMR chemical shift (ppm to TMS) of each atom is computed.
-uv
+uv:
 	absorption wavelengths (nm)  (for spin allowed states) are computed.
 
-energy (in Eh)
-	SCF energy is printed.
+energy: 
+	SCF energy (in Eh) is printed.
 
-cden
+cden:
 	charge and spin densities on each atom are computed.
 
-homolumo
-	HOMO/LUMO gap calculation
+homolumo:
+	HOMO/LUMO gap (Eh) calculation
 
-dipole
+dipole:
 	dipole moment of a molecule
 
-deen
-	decomposition energy of a molecule
+deen:
+	decomposition energy (in eV) of a molecule
 
-stable2o2
+stable2o2:
 	stability to oxygen molecule
 
-ipe
+ipe:
 	ionization potential energy
-eae
+eae:
 	electronic affinity 
-npe
+npe:
 	neutralization energy from a positively charged molecule (geometry optimized)
-nne
+nne:
 	neutralization energy from a negatively charged molecule (geometry optimized)
 
-fluore
+fluore:
 	wavelength (in nm) of fluorescence are computed. 
 	if you want to specify the state that emits fluorescence, you can specify the index of state like
 	“fluore=#” (# is an integer, default is “fluor=1”)
 
-tadf
+tadf:
 	compute the energy gap (in Eh) between minimum in the spin allowed state 
 	and the spin forbidden state.
