@@ -1,11 +1,20 @@
 import os, sys, math
-import re
-from numpy import *
-import subprocess
-import GaussianRunPack.AtomInfo
+import re, gc
 import shutil
+import subprocess
+from numpy import *
 from rdkit import Chem
-from rdkit.Chem import AllChem
+from rdkit.Chem import AllChem, Descriptors, rdmolops
+
+import GaussianRunPack.AtomInfo
+import GaussianRunPack.read_sdf
+import GaussianRunPack.Exe_Gaussian
+import GaussianRunPack.Get_ExcitedState
+import GaussianRunPack.Get_MolCoordinate
+import GaussianRunPack.Estimate_SpinContami
+import GaussianRunPack.Get_ChargeSpin
+import GaussianRunPack.Get_MOEnergy
+import GaussianRunPack.chk2fchk
 
 class GaussianDFTRun:
 
@@ -21,33 +30,6 @@ class GaussianDFTRun:
 
         self.mem = ''
 
-    def Extract_ExcitedState(self, lines):
-        Egrd = 0.0
-        Eext = 0.0
-        Found = False
-        WaveLength = []
-        V_OS = []
-        for line in lines:
-            if line.find("SCF Done:  ") >=0:
-                line_SCFEnergy = re.split("\s+", line)
-                Egrd = float(line_SCFEnergy[5])
-            if line.find("Total Energy, E(TD-HF/TD-DFT)") >=0:
-                line_totalenergy = line.split('=')
-                Eext = float(line_totalenergy[1])
-            if line.find("Excitation energies and oscillator strengths:") >=0:
-                 WaveLength = []
-                 V_OS = []
-            if line.find("Excited State  ") >=0:
-                 line_StateInfo = line.split()
-                 WaveLength.append(float(line_StateInfo[6]))
-                 OS_info = line_StateInfo[8].split('=')
-                 V_OS.append(float(OS_info[1]))
-            if line.find("-- Stationary point found.") >=0:
-                Found = True
-
-        return Found, Egrd, Eext, WaveLength, V_OS
-
-
     def Extract_SCFEnergy(self, lines):
 
         Energy=[]
@@ -58,213 +40,31 @@ class GaussianDFTRun:
         #print (line_StateInfo[4])
                 Energy.append(float(line_StateInfo[4]))
 
+        Comp_SS, Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(lines)
+
         return Energy[-1]
 
-    def Extract_MO(self, lines):
 
-            AlphaEigenVal = []
-            BetaEigenVal = []
-#            for line in lines:
-            for line in lines:
-                if line.find(" basis functions, ") >=0:
-                    line_StateInfo = line.split()
-            #        print (line_StateInfo[0])
-                    
-                    NumBasisFunc = int(line_StateInfo[0])
-  
-                if line.find(" alpha electrons ") >=0:
-                    line_StateInfo = line.split()
-            #        print (line_StateInfo[0])
-            #        print (line_StateInfo[3])
-            
-                    NumAlphaElec = int(line_StateInfo[0])
-                    NumBetaElec = int(line_StateInfo[3])
+    def Extract_values(self, infilename, option_array):
 
-                if line.find("Alpha  occ. eigenvalues --") >=0:
-  
-                    if len(AlphaEigenVal) == NumBasisFunc:
-                        AlphaEigenVal=[]
-                    
-                    line_removed = line.replace("Alpha  occ. eigenvalues --", " ")
-                    line_StateInfo = line_removed.split()
-                    for i in range(len(line_StateInfo)):
-                        AlphaEigenVal.append(float(line_StateInfo[i]))
-  
-                if line.find("Alpha virt. eigenvalues --") >=0:
-                    line_removed = line.replace("Alpha virt. eigenvalues --", " ")
-                    line_StateInfo = line_removed.split()
-                    for i in range(len(line_StateInfo)):
-                        AlphaEigenVal.append(float(line_StateInfo[i]))
-  
-                if line.find("Beta  occ. eigenvalues --") >=0:
-  
-                    if len(BetaEigenVal) == NumBasisFunc:
-                        BetaEigenVal=[]
-                    
-                    line_removed = line.replace("Beta  occ. eigenvalues --", " ")
-                    line_StateInfo = line_removed.split()
-                    for i in range(len(line_StateInfo)):
-                        BetaEigenVal.append(float(line_StateInfo[i]))
-  
-                if line.find("Beta virt. eigenvalues --") >=0:
-                    line_removed = line.replace("Beta virt. eigenvalues --", " ")
-                    line_StateInfo = line_removed.split()
-                    for i in range(len(line_StateInfo)):
-                        BetaEigenVal.append(float(line_StateInfo[i]))
+        opt       = int(option_array[0]) 
+        nmr       = int(option_array[1]) 
+        uv        = int(option_array[2])
+        energy    = int(option_array[3])
+        gap       = int(option_array[4])
+        dipole    = int(option_array[5])
+        deen      = int(option_array[6])
+        stable2o2 = int(option_array[7])
+        fluor     = int(option_array[8])
+        tadf      = int(option_array[9])
+        ipe       = int(option_array[10])
+        eae       = int(option_array[11])
+        pne       = int(option_array[12])
+        nne       = int(option_array[13])
+        cden      = int(option_array[14])
 
-            return NumAlphaElec, NumBetaElec, AlphaEigenVal, BetaEigenVal 
-
-    def Extract_Coordinate(self, lines):
-
-        print ("Start finding coordinates...")
-
-        Atom_index = []
-        NumElement = []
-        AtomicType = []
-        X = []
-        Y = []
-        Z = []
-
-        count = 0
-        count_Station = 0
-        Total_NumStation =0
-        Index_Station = 0
-
-######Counting Stationary points##############
-        for line in lines:
-            if line.find("-- Stationary point found.") >= 0:
-                count_Station += 1
-
-##############################################
-        Total_NumStation = count_Station
-
-        if Total_NumStation > 0:
-            count_Station = 0
-            print ("Total number of stationary points: ", Total_NumStation)
-            for line in lines:
-                if line.find("-- Stationary point found.") >= 0:
-                    count_Station += 1
-                    Index_Station += 1
-                    print ("A stationary point is found! #", Index_Station)
-                    continue
-                if line.find("Standard orientation:") >=0 and count_Station > 0:
-#                    print ("Standard orientaion was found")
-#                    print ("Start reading coordinate")
-                    count += 1
-                    continue
-                if count == 1:
-                    Border_1 = line
-#                    print (Border_1)
-                    count += 1
-                    continue
-                if count == 2:
-                    Index_1 = line
-#                    print (Index_1)
-                    count += 1
-                    continue
-                if count == 3:
-                    Index_2 = line
-#                    print (Index_2)
-                    count += 1
-                    continue
-                if count == 4:
-                    Border_2 = line
-#                    print (Border_2)
-                    count += 1
-                    continue
-                if count >= 5:
-                    i_atom = line.split()
-#                    print (i_atom)
-                    if len(i_atom) == 6:
-                        Atom_index.append(int(i_atom[0]))
-                        NumElement.append(int(i_atom[1]))
-                        AtomicType.append(int(i_atom[2]))
-                        X.append(float(i_atom[3]))
-                        Y.append(float(i_atom[3]))
-                        Z.append(float(i_atom[3]))
-                        count += 1
-                        continue
-                    else :
-                        print ("Reading atom coordinates is finished...")
-                        N = count-5
-                        print ("Number of atoms: ", N)
-                        count = 0
-                        count_Station = 0
-                    continue
-
-        else:
-            for line in lines:
-                if line.find("Standard orientation:") >=0:
-                    print ("Standard orientaion was found")
-                    print ("Start reading coordinate")
-                    count += 1
-                    continue
-                if count == 1:
-                    Border_1 = line
-#                    print (Border_1)
-                    count += 1
-                    continue
-                if count == 2:
-                    Index_1 = line
-#                    print (Index_1)
-                    count += 1
-                    continue
-                if count == 3:
-                    Index_2 = line
-#                    print (Index_2)
-                    count += 1
-                    continue
-                if count == 4:
-                    Border_2 = line
-#                    print (Border_2)
-                    count += 1
-                    continue
-                if count >= 5:
-                    i_atom = line.split()
-#                    print (i_atom)
-                    if len(i_atom) == 6:
-                        Atom_index.append(int(i_atom[0]))
-                        NumElement.append(int(i_atom[1]))
-                        AtomicType.append(int(i_atom[2]))
-                        X.append(float(i_atom[3]))
-                        Y.append(float(i_atom[3]))
-                        Z.append(float(i_atom[3]))
-                        count += 1
-                        continue
-                    else :
-                        print ("Reading atom coordinates is finished...")
-                        N = count-5
-                        print ("Number of atoms: ", N)
-                        count = 0
-                    continue
-
-
-#Translating  atomic number to element symbol
-        Mol_atom = []
-#        Mol_CartX = zeros(N)
-#        Mol_CartY = zeros(N)
-#        Mol_CartZ = zeros(N)
-
-        for i in range(N):
-            Mol_atom.append(GaussianRunPack.AtomInfo.AtomicNumElec(NumElement[i]))
-#            print (Mol_atom[i])
-
-#############
-        del Atom_index[:]
-        del NumElement[:]
-        del AtomicType[:]
-        del X[:]
-        del Y[:]
-        del Z[:]
-
-        return Mol_atom
-
-
-    def Extract_values(self, infilename,opt, nmr,uv,energy,ipe, eae, pne, nne, gap,dipole,deen, stable2o2, fluor,tadf):
-
-        ifile = open(infilename,'r') #open file for reading
-        lines = ifile.readlines()
-        ifile.close()
+        with open(infilename, 'r') as ifile:
+            lines = ifile.readlines()
 
         output = {}
 
@@ -285,7 +85,7 @@ class GaussianDFTRun:
 
         if gap == 1:
   
-            NumAlphaElec, NumBetaElec, AlphaEigenVal, BetaEigenVal = self.Extract_MO(GS_lines)
+            NumAlphaElec, NumBetaElec, AlphaEigenVal, BetaEigenVal = GaussianRunPack.Get_MOEnergy.Extract_MO(GS_lines)
 
             if BetaEigenVal == []:
                 Alpha_gap = 27.211*(AlphaEigenVal[NumAlphaElec]-AlphaEigenVal[NumAlphaElec-1])
@@ -331,7 +131,7 @@ class GaussianDFTRun:
             except KeyError:
                 GS_Energy = self.Extract_SCFEnergy(GS_lines)
         
-            Mol_atom = self.Extract_Coordinate(GS_lines)
+            Mol_atom, Mol_X, Mol_Y, Mol_Z = GaussianRunPack.Get_MolCoordinate.Extract_Coordinate(GS_lines)
 
 #######Calculating Decomposed atoms total energy#######################
             decomposed_Energy = 0
@@ -347,7 +147,7 @@ class GaussianDFTRun:
             output["deen"] = GS_Energy - (decomposed_Energy)
 
         if stable2o2 == 1:
-            NumAlphaElec, NumBetaElec, AlphaEigenVal, BetaEigenVal = self.Extract_MO(GS_lines)
+            NumAlphaElec, NumBetaElec, AlphaEigenVal, BetaEigenVal = GaussianRunPack.Get_MOEnergy.Extract_MO(GS_lines)
             O2_SOMO, O2_LUMO = GaussianRunPack.AtomInfo.O2_MO_refer(self.functional, self.basis)
 
             if BetaEigenVal == []:
@@ -371,6 +171,10 @@ class GaussianDFTRun:
                 ReducedbyO2 = AlphaEigenVal[NumAlphaElec] - O2_SOMO
 
                 output["stable2o2"] = [OxidizedbyO2,ReducedbyO2]
+
+
+        if cden == 1:
+            output["cden"] = GaussianRunPack.Get_ChargeSpin.Extract_ChargeSpin(GS_lines)
   
         ##########################################################################
         # Index of Links
@@ -382,7 +186,8 @@ class GaussianDFTRun:
         # Index = 1+nmr+ipe+epe   : Electronic affinity      [if eae==1]
         # Index = 1+nmr+ipe+epe+pne   : neutrization energy from cation  [if pne==1]
         # Index = 1+nmr+ipe+epe+pne+nne  : neutrization energy from anion  [if nne==1]
-        # Index = 1+nmr+ipe+epe+pne+nne+1 : Virtical excitation (S0 -> S1) [uv or fluor or tadf]
+        # Index = 1+nmr+ipe+epe+pne+nne+1 : Virtical excitation (S0 -> S1) [uv]
+        #########################################################################
         # Index = 2+nmr+ipe+epe+pne+nne+1 : Optimization of S1             [fluor or tadf] 
         # Index = 3+nmr+ipe+epe+pne+nne+1 : Optimization of T1             [tadf]
         ##########################################################################
@@ -431,13 +236,14 @@ class GaussianDFTRun:
                 Links[Index]=""
 
                 IP_Energy =  self.Extract_SCFEnergy(IP_lines)
+                IP_Comp_SS, IP_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(IP_lines)
 
                 print (IP_Energy)
 
 #                output["ipe"] = 27.211*(GS_Energy - IP_Energy)
 
 ######Normal ionization potential calculation####################
-                output["ipe"] = 27.211*(IP_Energy - GS_Energy)
+                output["ipe"] = [27.211*(IP_Energy - GS_Energy), Spin_diff]
 #################################################################
 
             if eae == 1:
@@ -447,13 +253,14 @@ class GaussianDFTRun:
                 Links[Index]=""
 
                 EA_Energy =  self.Extract_SCFEnergy(EA_lines)
+                EA_Comp_SS, EA_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(EA_lines)
 
                 print (EA_Energy)
 
 #                output["eae"] = 27.211*(EA_Energy - GS_Energy)
 
 ######Normal electronic affinity calculation####################
-                output["eae"] = 27.211*(GS_Energy - EA_Energy)
+                output["eae"] = [27.211*(GS_Energy - EA_Energy), Spin_diff]
 #################################################################
 
 
@@ -470,12 +277,14 @@ class GaussianDFTRun:
                 pne += 1
 
                 PC_Energy =  self.Extract_SCFEnergy(PC_lines)
+                PC_Comp_SS, PC_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(PC_lines)
                 VNP_Energy =  self.Extract_SCFEnergy(VNP_lines)
+                VNP_Comp_SS, VNP_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(VNP_lines)
 
                 print (PC_Energy)
                 print (VNP_Energy)
 
-                output["pne"] = 27.211*(PC_Energy - VNP_Energy)
+                output["pne"] = [27.211*(PC_Energy - VNP_Energy), PC_Spin_diff, VNP_Spin_diff]
 
             if nne == 1:
 
@@ -488,7 +297,9 @@ class GaussianDFTRun:
                 nne +=1
 
                 NC_Energy =  self.Extract_SCFEnergy(NC_lines)
+                NC_Comp_SS, NC_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(NC_lines)
                 VNN_Energy =  self.Extract_SCFEnergy(VNN_lines)
+                VNN_Comp_SS, NC_Ideal_SS = GaussianRunPack.Estimate_SpinContami.Estimate_SpinDiff(VNN_lines)
 
                 print (NC_Energy)
                 print (VNN_Energy)
@@ -496,46 +307,55 @@ class GaussianDFTRun:
 #                output["nne"] = 27.211*(NC_Energy - VNN_Energy)
 
 ######Normal electronic affinity calculation####################
-                output["nne"] = 27.211*(VNN_Energy - NC_Energy)
+                output["nne"] = [27.211*(VNN_Energy - NC_Energy),NC_Spin_diff,VNN_Spin_diff]
 #################################################################
 
   
-        if uv == 1 or fluor == 1 or tadf == 1:
+        if uv == 1:
+
             Index = 1+nmr+ipe+eae+pne+nne+1 
             lines = "" if Index >= n else Links[Index].splitlines()
-            Found, Egrd, Eext, WaveLength, V_OS = self.Extract_ExcitedState(lines)
+
+            Found, Egrd, Eext, State_allowed, State_forbidden, WL_allowed, WL_forbidden, OS_allowed, OS_forbidden, \
+            CD_L_allowed, CD_L_forbidden, CD_OS_allowed, CD_OS_forbidden  \
+            = GaussianRunPack.Get_ExcitedState.Extract_ExcitedState(lines)
 #            print (Found)
 #            print (Egrd)
 #            print (Eext)
-            output["uv"] = [WaveLength, V_OS]
+
+            output["uv"] = [WL_allowed, OS_allowed, CD_L_allowed, CD_OS_allowed]
+            output["state_index"] = [State_allowed, State_forbidden]
             Links[Index]=""
   
         if fluor == 1 or tadf == 1:
-            Index = 2+nmr+ipe+eae+pne+nne+1
+
+            Index = 1+fluor
             lines = "" if Index >= n else Links[Index].splitlines()
-            S1_Found, S1_Egrd, S1_Eext, S1_WaveLength, S1_V_OS = self.Extract_ExcitedState(lines)
-            output["S1 Total Energy"] = S1_Eext
-            output["S1 Wavelength and Oscillator strengths"] = [S1_WaveLength, S1_V_OS]
+
+            S_Found, S_Egrd, S_Eext, State_allowed, State_forbidden, WL_allowed, WL_forbidden, OS_allowed, OS_forbidden, \
+            CD_L_allowed, CD_L_forbidden, CD_OS_allowed, CD_OS_forbidden  \
+            = GaussianRunPack.Get_ExcitedState.Extract_ExcitedState(lines)
+
+            output["MinEtarget"] = S_Eext
+            output["fluor"] = [WL_allowed, OS_allowed, CD_L_allowed, CD_OS_allowed]
             Links[Index]=""
   
         if tadf == 1:
-            Index = 3+nmr+ipe+eae+pne+nne+1
+            Index = 1+fluor+tadf 
             lines = "" if Index >= n else Links[Index].splitlines()
-            T1_Found, T1_Egrd, T1_Eext, T1_WaveLength, T1_V_OS = self.Extract_ExcitedState(lines)
-            output["T1 Total Energy"] = T1_Eext
-            output["T1 Wavelength and Oscillator strengths"] = [T1_WaveLength, T1_V_OS]
+            T_Found, T_Egrd, T_Eext, State_allowed, State_forbidden, WL_allowed, WL_forbidden, OS_allowed, OS_forbidden, \
+            CD_L_allowed, CD_L_forbidden, CD_OS_allowed, CD_OS_forbidden  \
+            = GaussianRunPack.Get_ExcitedState.Extract_ExcitedState(lines)
+            output["T_Min"] = T_Eext
+            output["T_Phos"] = [WL_forbidden, OS_forbidden, CD_L_forbidden, CD_OS_forbidden]
             TADF_Eng = 0.0
-            if S1_Found and T1_Found:
-               TADF_Eng = S1_Eext - T1_Eext
-            output["Energy difference (S1-T1)"] = TADF_Eng
+            if S_Found and T_Found:
+               TADF_Eng = S_Eext - T_Eext
+            output["Delta(S-T)"] = TADF_Eng
             Links[Index]=""
-  
-       # Debug print for SplitLinks
-       #      for i in range(0,n):
-       #          f = open(infilename+"."+str(i), 'w')
-       #          for s in Sections[i]:
-       #              f.write(s)
-       #          f.close() 
+        
+        del lines
+        del Links
   
         return output
 
@@ -567,15 +387,20 @@ class GaussianDFTRun:
 
         return s, s_solvent
 
-    def MakeLinkTD(self, line_chk, line_method, State, SCRF, SCRF_read, Opt):
+    def MakeLinkTD(self, line_chk, line_method, SCRF, SCRF_read, Opt, targetstate=1):
 
         self.MakeSolventLine()
 
-        line_method_TD = 'TD(Nstate=10, '+ State + ')'
+        Jobname_line =line_chk.split('=')
+        Jobname = Jobname_line[-1]
+
+        line_oldchk = '%Oldchk='+Jobname
+        line_newchk = '%chk='+ Jobname + '_ExOptState' + str(targetstate)
+
+        line_method_TD = 'TD(Nstate=20, root='+ str(targetstate) +')'
         line_readMOGeom = 'Geom=AllCheck Guess=Read'
         s = ''
-        s = s + '--Link1--'
-        s = s + '\n'
+        s = s + '--Link1--\n'
         if self.mem != '':
             line_mem = '%mem='+str(self.mem)
             s = s + line_mem      
@@ -584,8 +409,11 @@ class GaussianDFTRun:
             line_proc = '%nproc='+str(self.nproc)
             s = s + line_proc
             s = s + '\n'
-        s = s + line_chk
-        s = s + '\n'
+        if Opt == True:
+            s = s + line_oldchk + '\n'
+            s = s + line_newchk + '\n'
+        else:
+            s = s + line_chk +'\n'
         s = s + line_method
         s = s + '\n'
         s = s + line_method_TD
@@ -594,7 +422,8 @@ class GaussianDFTRun:
         s = s + '\n'
         s = s + SCRF
         if Opt == True:
-            s = s + " Opt"
+#            s = s + "Opt=(MaxCycles=50)"
+            s = s + "Opt"
             s = s + '\n'
         s = s + '\n' 
 
@@ -611,65 +440,75 @@ class GaussianDFTRun:
 
         options = option_line.split()
 
-        opt = 0
-        nmr = 0
-        uv = 0
-        energy = 0
-        gap = 0
-        dipole = 0
-        deen = 0
-        stable2o2 = 0
-        fluor = 0
-        tadf = 0
-        ipe = 0
-        eae = 0
-        pne = 0
-        nne = 0
+        option_array = zeros(15)
+        option_array_Ex = zeros(15)
+
+        targetstate = 1
 
         for i in range(len(options)):
-#            print(options[i])
             option = options[i]
             if option == 'opt':
-                opt = 1
-                print ('opt = ', opt)
+#                opt = 1
+                option_array[0] = 1
             elif option == 'nmr':
-                nmr = 1
+#                nmr = 1
+                option_array[1] = 1
                 #print ('nmr')
             elif option == 'uv':
-                uv = 1
+#                uv = 1
+                option_array[2] = 1
                 #print ('uv')
             elif option == 'energy':
-                energy = 1
+#                energy = 1
+                option_array[3] = 1
                 #print ('energy')
             elif option == 'homolumo':
-                gap = 1
+#                gap = 1
+                option_array[4] = 1
                 #print ('HOMO/LUMO')
             elif option == 'dipole':
-                dipole = 1
+#                dipole = 1
+                option_array[5] = 1
                 #print ('dipole')
             elif option == 'deen':
-                deen = 1
+#                deen = 1
+                option_array[6] = 1
                 #print ('Decomposition energy')
             elif option == 'stable2o2':
-                stable2o2 = 1
+#                stable2o2 = 1
+                option_array[7] = 1
                 #print ('Stability to O2')
-            elif option == 'fluor':
-                fluor = 1
+#            elif option == 'fluor':
+            elif 'fluor' in option:
+#                fluor = 1
+                option_array_Ex[8] = 1
+                if '=' in option:
+                    in_target = option.split("=")
+                    targetstate = in_target[-1]
                 #print ('Fluorescence')
             elif option == 'tadf':
-                tadf = 1
+#                tadf = 1
+                option_array_Ex[9] = 1
                 #print ('Thermally Activated Delayed Fluorescence')
             elif option == 'ipe':
-                ipe = 1
+#                ipe = 1
+                option_array[10] = 1
                 #print ('Ionization potential')
             elif option == 'eae':
-                eae = 1
+#                eae = 1
+                option_array[11] = 1
                 #print ('Electronic affinity')
             elif option == 'pne':
-                pne = 1
+#                pne = 1
+                option_array[12] = 1
                 #print ('Neutraization energy from cation')
             elif option == 'nne':
-                nne = 1
+#                nne = 1
+                option_array[13] = 1
+                #print ('Neutraization energy from anion')
+            elif option == 'cden':
+#                nne = 1
+                option_array[14] = 1
                 #print ('Neutraization energy from anion')
             else:
                 print('invalid option: ', option)
@@ -684,7 +523,7 @@ class GaussianDFTRun:
 
         if PreGauInput[1] == "sdf":
             ReadFromsdf = 1 
-            Mol_atom, X, Y, Z, TotalCharge, SpinMulti = self.read_sdf()
+            Mol_atom, X, Y, Z, TotalCharge, SpinMulti = GaussianRunPack.read_sdf.read_sdf(infilename)
         elif PreGauInput[1] == "chk":
             ReadFromchk = 1 
         else:
@@ -694,7 +533,7 @@ class GaussianDFTRun:
         line_chk = '%chk='+PreGauInput[0]
         line_oldchk = '%Oldchk='+PreGauInput[0]
 
-        line_method = '#'+self.functional+'/'+self.basis
+        line_method = '#u'+self.functional+'/'+self.basis+' test'
 
         line_comment = infilename
 
@@ -716,8 +555,8 @@ class GaussianDFTRun:
     
         ofile.write(line_chk+'\n')
         ofile.write(line_method+'\n')
-        if opt == 1:
-            ofile.write('Opt\n')
+        if option_array[0] == 1: # opt == 1
+            ofile.write('Opt=(MaxCycles=100)\n')
 
 
 #######Solvent effect############################
@@ -748,7 +587,7 @@ class GaussianDFTRun:
             ofile.write(SCRF_read)
 #######################################
 
-        if nmr == 1:
+        if option_array[1] == 1: # nmr == 1
 
             ofile.write('--Link1--\n')
 
@@ -772,7 +611,7 @@ class GaussianDFTRun:
             ofile.write('\n')
             ofile.write(SCRF_read)
 
-        if ipe == 1:
+        if option_array[10] == 1: # ipe == 1
 
             ofile.write('--Link1--\n')
 
@@ -800,7 +639,7 @@ class GaussianDFTRun:
             ofile.write('\n')
             ofile.write(SCRF_read)
 
-        if eae == 1:
+        if option_array[11] == 1: # eae == 1
 
             ofile.write('--Link1--\n')
 
@@ -828,7 +667,7 @@ class GaussianDFTRun:
             ofile.write('\n')
             ofile.write(SCRF_read)
 
-        if pne == 1:
+        if option_array[12] == 1: # pne == 1
 
             ofile.write('--Link1--\n')
 
@@ -843,7 +682,7 @@ class GaussianDFTRun:
 
             ofile.write(line_chk+'_PC\n')
             ofile.write(line_oldchk+'\n')
-            ofile.write(line_method+' opt'+'\n')
+            ofile.write(line_method+' Opt'+'\n')
             ofile.write(SCRF)
 
             ofile.write(line_readOnlyMOGeom+'\n')
@@ -881,8 +720,7 @@ class GaussianDFTRun:
             ofile.write('\n')
             ofile.write(SCRF_read)
 
-
-        if nne == 1:
+        if option_array[13] == 1: #nne == 1
 
             ofile.write('--Link1--\n')
 
@@ -897,7 +735,7 @@ class GaussianDFTRun:
 
             ofile.write(line_oldchk+'\n')
             ofile.write(line_chk+'_NC\n')
-            ofile.write(line_method+' opt'+'\n')
+            ofile.write(line_method+' Opt'+'\n')
             ofile.write(SCRF)
 
             ofile.write(line_readOnlyMOGeom+'\n')
@@ -936,16 +774,8 @@ class GaussianDFTRun:
             ofile.write(SCRF_read)
 
 
-        if uv == 1 or fluor==1 or tadf == 1:
-            sTD = self.MakeLinkTD(line_chk, line_method, "Singlet", SCRF, SCRF_read, False)
-            ofile.write(sTD) 
-
-        if fluor == 1 or tadf == 1:
-            sTD = self.MakeLinkTD(line_chk, line_method, "Singlet",  SCRF, SCRF_read, True)
-            ofile.write(sTD) 
-
-        if tadf == 1:
-            sTD = self.MakeLinkTD(line_chk, line_method, "Triplet",  SCRF, SCRF_read, True)
+        if option_array[2] == 1 or option_array[8] == 1 or option_array[9] == 1: #uv == 1 or fluor==1 or tadf == 1
+            sTD = self.MakeLinkTD(line_chk, line_method, SCRF, SCRF_read, False)
             ofile.write(sTD) 
 
         ofile.write('\n') 
@@ -963,28 +793,61 @@ class GaussianDFTRun:
             shutil.move(infilename, PreGauInput[0]) 
 
         os.chdir(PreGauInput[0])
-
-        tmp_test=open(GauInputName,'r')
-        #tmp_test.close()
-        #route = tmp_test.readline()
-
-        #print (route)
         
-        subprocess.call(["g16", PreGauInput[0]])
+        GaussianRunPack.Exe_Gaussian.exe_Gaussian(PreGauInput[0])
 
         logfile = PreGauInput[0]+'.log'
 
-        output_dic = self.Extract_values(logfile,opt,nmr,uv,energy, ipe, eae, pne, nne, gap,dipole,deen,stable2o2, fluor,tadf)
+        output_dic = self.Extract_values(logfile, option_array)
+    
+
+        if option_array_Ex[8] == 1 or option_array_Ex[9] == 1: #fluor == 1 or tadf == 1
+
+            compute_state = output_dic["state_index"][0][int(targetstate)-1] 
+            JobName_ExOpt = PreGauInput[0] + "_ExOpt"
+            GauInputName_ExOpt = JobName_ExOpt + ".com"
+            logfile_ExOpt = JobName_ExOpt + ".log"
+            ofile_ExOpt = open(GauInputName_ExOpt ,'w')
+
+            if self.mem != '':
+                line_mem = '%mem='+str(self.mem)
+                ofile_ExOpt.write(line_mem+'\n')
+
+            if self.nproc > 1 :
+                line_proc = '%nproc='+str(self.nproc)
+                ofile_ExOpt.write(line_proc+'\n')
+    
+                ofile_ExOpt.write(line_chk+'\n')
+                ofile_ExOpt.write(line_method+'\n')
+
+            ofile_ExOpt.write(line_readMOGeom+'\n')
+            ofile_ExOpt.write('\n')
+
+            sTD = self.MakeLinkTD(line_chk, line_method, SCRF, SCRF_read, True, compute_state)
+            ofile_ExOpt.write(sTD)
+
+            if option_array_Ex[9] == 1: #tadf == 1
+                compute_state = output_dic["state_index"][1][int(targetstate)-1] 
+                sTD = self.MakeLinkTD(line_chk, line_method, SCRF, SCRF_read, True, compute_state)
+                ofile_ExOpt.write(sTD) 
+
+            ofile_ExOpt.close()
+
+            GaussianRunPack.Exe_Gaussian.exe_Gaussian(JobName_ExOpt)
+
+            output_dic_Ex = self.Extract_values(logfile_ExOpt, option_array_Ex)
+
+            output_dic.update(output_dic_Ex)
+
+        GaussianRunPack.chk2fchk.Get_chklist()
 
         os.chdir("..")
 
-        tmp_test.close()
         return(output_dic)
 
     def SplitLinks(self, logfile):
-        f = open(logfile, 'r')
-        lines = f.readlines()
-        f.close()
+        with open(logfile, 'r') as f:
+            lines = f.readlines()
 
         Links = []
         Link = ""
@@ -999,156 +862,5 @@ class GaussianDFTRun:
         Links.append(Link)
         return Links
 
-#####################To get cartesian coordinates from sdf file###############
-    def read_sdf(self):
-
-        ifile = open(self.in_file, 'r')
-
-        sdfinfo = Chem.SDMolSupplier(self.in_file, removeHs=False)
-
-        for mol in sdfinfo:
- #           mol = Chem.AddHs(mol)
-            N = mol.GetNumAtoms()
-            N_Bond = mol.GetNumBonds()
-
-     #   print ("Number of atoms = ", N)
-     #   print ("Number of bonds = ", N_Bond)
-
-        count = 0
-
-        X = []
-        Y = []
-        Z = []
-        element_symbol = []
-
-        Bond_pair1 = []
-        Bond_pair2 = []
-        Bond_type = []
-
-        TotalCharge = 0 
-        CHG_atom = []
-        CHG = []
-
-        for line in ifile:
-            if count == 0:
-                Header1 = line
-
-                count += 1
-                continue
-
-            if count == 1:
-                Header2 = line
-
-                count += 1
-                continue
-
-            if count == 2:
-                Header3 = line
-
-                count += 1
-                continue
-
-            if count == 3:
-                a = line.split()
-        #        N = int(a[0])
-        #        N_Bond = int(a[1])
-
-                count += 1
-                continue
-
-            if 3 < count <= N+4:
-                i_atom = line.split()
-                if len(i_atom) != 0:
-                    X.append(float(i_atom[0]))
-                    Y.append(float(i_atom[1]))
-                    Z.append(float(i_atom[2]))
-                    element_symbol.append(i_atom[3])
-    
-                count += 1
-                continue
-
-            if N+4 < count <= N+N_Bond+3 :
-                bond_info = line.split()
-                #print (bond_info)
-                bond_info = line.split()
-                Bond_pair1.append(int(bond_info[0]))
-                Bond_pair2.append(int(bond_info[1]))
-                Bond_type.append(int(bond_info[2]))
-
-                count +=1
-                continue
-
-            if count > N+N_Bond+3:
-                mol_info = line.split()
-                #print (mol_info)
-                if (mol_info[0] == "M"):
-                    if (mol_info[1] == "END"):
-                        break
-                    if (mol_info[1] == "CHG"):
-                        Num_CHGInfo = int(mol_info[2])
-                        for k in range(Num_CHGInfo):
-                            CHG_atom.append(int(mol_info[3+2*k]))
-                            CHG.append(int(mol_info[4+2*k]))
-                            TotalCharge += int(mol_info[4+2*k])
-                else:
-                    print("The sdf file is invalid!")
-                    sys.exit()
-
-                count +=1
-
-#Copy to array of numpy###########################
-
-        Mol_atom = []
-        Mol_CartX = zeros(N)
-        Mol_CartY = zeros(N)
-        Mol_CartZ = zeros(N)
-
-        CHG_atom = array(CHG_atom)
-        CHG = array(CHG)
-
-        for j in range(N):
-            Mol_CartX[j] = X[j] 
-            Mol_CartY[j] = Y[j] 
-            Mol_CartZ[j] = Z[j] 
-            Mol_atom.append(element_symbol[j])
-
-    #del element_symbol[N:TotalStep]
-
-        del element_symbol[:]
-        del X[:]
-        del Y[:]
-        del Z[:]
-
-###For debug#######################################
-#
-#        print (Mol_atom)
-#        print (N)
-#        print (len(Mol_CartX))
-#
-        print('Reading the sdf file has finished')
-
-###Calculating the total number of electrons#################
-        TotalNum_electron = 0 
-
-        for j in range(N):
-            if (len(CHG_atom) != 0):
-                Judge = CHG_atom-j
-                if (any(Judge) == 0):
-                    TotalNum_electron += GaussianRunPack.AtomInfo.AtomicNumElec(Mol_atom[j])-CHG[where(Judge == 0)]
-                else:
-                    TotalNum_electron += GaussianRunPack.AtomInfo.AtomicNumElec(Mol_atom[j])
-            else:
-                TotalNum_electron += GaussianRunPack.AtomInfo.AtomicNumElec(Mol_atom[j])
-
-        print('Total number of electron: %7d ' %  (TotalNum_electron))
-
-        if (TotalNum_electron%2==0):
-            print ("This system is a closed shell!")
-            SpinMulti = 1
-        else:
-            print ("This system is a open shell!")
-            SpinMulti = 2
-
-        return Mol_atom, Mol_CartX, Mol_CartY, Mol_CartZ, TotalCharge, SpinMulti
 
         
